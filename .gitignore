@@ -1,0 +1,5 @@
+# Project-specific ignores
+config/config.json
+venv/
+input_data/
+

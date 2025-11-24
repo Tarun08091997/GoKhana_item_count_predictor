@@ -1,0 +1,7 @@
+write  python script to check the data for restuarents in the mogoDB for creating an excel sheet to get restaurent_id , restaurent_name , food_court_id , food_court_name , total_indivisual_items , start_date and end date_date of orders.
+
+A second sheet where rest_id , rest_name , indivisual item list ( in rows) starting_date of each item and ending_date of each item, total non_zero_count days of each item , last_week_total_count for item and last_month_avg count of item.
+
+for restaurent_list you can use locahost.localGokhana.restaurant_data which has documnets for each restaurent where _id is restaurent_id and data.name is restaurent_name, data.foodcourt is food_court_id (for food_court_name you can go to loclaGohana.food_court_record and seach by foodcourt id to find data.name as food_court_name).
+
+then you can connect to mongoString ( make it as variable I will put its value manually) in which we have "foodorder" collection in which order documnets are given. Use index data.parentId_1_createdAt_-1_data.orderstatus_1  where data.paranetId is restaurent_id from which we will get indivisual item and stuff . In each document _id means item_id and item.name means item_name. Also I want to save the progress so that if it is stopped in middle it can resume from next. Can you understood from it
