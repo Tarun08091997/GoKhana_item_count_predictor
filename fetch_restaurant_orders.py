@@ -1,7 +1,7 @@
 """
 Script to fetch foodorder data per restaurant from MongoDB.
 Fetches orders filtered by restaurant_id (data.parentId) and orderstatus="completed".
-Saves data to CSV files in input_data/food_court_data/{foodcourt_id}/{restaurant_id}.csv
+Saves data to Parquet files in input_data/fetched_data/{foodcourt_id}/{restaurant_id}.parquet
 Only creates folder structure when there's actual data to save.
 """
 
@@ -10,6 +10,7 @@ import sys
 import json
 import logging
 import pandas as pd
+import pytz
 from datetime import datetime
 from pymongo import MongoClient
 from bson import ObjectId
@@ -34,7 +35,7 @@ collection_name = cloud_config["mongodb"]["collection_name"]
 current_path = os.path.dirname(os.path.abspath(__file__))
 input_data_path = os.path.join(current_path, "input_data")
 progress_json_path = os.path.join(input_data_path, "fetch_progress.json")
-food_court_data_path = os.path.join(input_data_path, "food_court_data")
+fetched_data_path = os.path.join(input_data_path, "fetched_data")
 report_csv_path = os.path.join(input_data_path, "restaurant_report.csv")
 
 
@@ -76,7 +77,7 @@ def to_objectid_if_possible(val):
     return val
 
 
-def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, progress_ctx=None):
+def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, progress_ctx=None, start_date=None):
     """
     Fetch foodorder data for a specific restaurant.
     Fetches ALL completed orders - uses placedtime for non-preorders and pickupdatetime for preorders as date.
@@ -86,15 +87,17 @@ def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, p
         collection: MongoDB collection
         restaurant_id: Restaurant ID (string or ObjectId)
         include_preorders: Whether to include preorder data
+        progress_ctx: Progress context for progress bar
+        start_date: Optional datetime or date string. If provided, only fetches data after this date.
     
     Returns:
         pd.DataFrame: Order data with is_preorder column indicating if order is preorder
     """
     restaurant_objid = to_objectid_if_possible(restaurant_id)
     
-    logging.info(f"Fetching orders for restaurant: {restaurant_id}")
-    if include_preorders:
-        logging.info("Including preorder data")
+    if start_date:
+        if isinstance(start_date, str):
+            start_date = pd.to_datetime(start_date)
     
     all_data = []
     
@@ -109,6 +112,21 @@ def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, p
                 {"data.preorder": {"$exists": True, "$in": [False, None]}}
             ]
         }
+        
+        # Add date filter if start_date is provided
+        if start_date:
+            # Convert to datetime and then to ISO format for MongoDB
+            if isinstance(start_date, pd.Timestamp):
+                start_datetime = start_date.to_pydatetime()
+            else:
+                start_datetime = pd.to_datetime(start_date).to_pydatetime()
+            # MongoDB expects datetime in UTC, but we need to account for timezone
+            # Since we're filtering by date (not time), we want to include the entire start_date
+            # So we set time to 00:00:00 in the timezone (+05:30)
+            ist = pytz.timezone('Asia/Kolkata')
+            start_datetime_ist = ist.localize(datetime.combine(start_datetime.date(), datetime.min.time()))
+            start_datetime_utc = start_datetime_ist.astimezone(pytz.UTC)
+            filter_criteria_non_preorder["data.placedtime"] = {"$gte": start_datetime_utc}
         
         pipeline_non_preorder = [
             {"$match": filter_criteria_non_preorder},
@@ -137,6 +155,7 @@ def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, p
                             "timezone": "+05:30"
                         }
                     },
+                    "placedtime_raw": "$data.placedtime",
                     "orderstatus": "$data.orderstatus",
                     "is_preorder": {"$literal": False}
                 }
@@ -156,13 +175,13 @@ def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, p
                     },
                     "total_count": {"$sum": "$count"},
                     "total_price": {"$sum": "$itemprice"},
-                    "is_preorder": {"$first": "$is_preorder"}
+                    "is_preorder": {"$first": "$is_preorder"},
+                    "placedtime_raw": {"$first": "$placedtime_raw"}
                 }
             },
         ]
         
         results_non_preorder = list(collection.aggregate(pipeline_non_preorder, allowDiskUse=True))
-        logging.info(f"Found {len(results_non_preorder)} non-preorder records")
         all_data.extend(results_non_preorder)
         
         # 2. Fetch preorder data (if include_preorders is True)
@@ -173,6 +192,17 @@ def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, p
                 "data.orderstatus": "completed",
                 "data.preorder": True
             }
+            
+            # Add date filter if start_date is provided
+            if start_date:
+                ist = pytz.timezone('Asia/Kolkata')
+                if isinstance(start_date, pd.Timestamp):
+                    start_datetime = start_date.to_pydatetime()
+                else:
+                    start_datetime = pd.to_datetime(start_date).to_pydatetime()
+                start_datetime_ist = ist.localize(datetime.combine(start_datetime.date(), datetime.min.time()))
+                start_datetime_utc = start_datetime_ist.astimezone(pytz.UTC)
+                filter_criteria_preorder["data.pickupdatetime"] = {"$gte": start_datetime_utc}
             
             pipeline_preorder = [
                 {"$match": filter_criteria_preorder},
@@ -201,6 +231,7 @@ def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, p
                                 "timezone": "+05:30"
                             }
                         },
+                        "pickupdatetime_raw": "$data.pickupdatetime",
                         "orderstatus": "$data.orderstatus",
                         "is_preorder": {"$literal": True}
                     }
@@ -220,16 +251,14 @@ def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, p
                         },
                         "total_count": {"$sum": "$count"},
                         "total_price": {"$sum": "$itemprice"},
-                        "is_preorder": {"$first": "$is_preorder"}
+                        "is_preorder": {"$first": "$is_preorder"},
+                        "pickupdatetime_raw": {"$first": "$pickupdatetime_raw"}
                     }
                 },
             ]
             
             results_preorder = list(collection.aggregate(pipeline_preorder, allowDiskUse=True))
-            logging.info(f"Found {len(results_preorder)} preorder records")
             all_data.extend(results_preorder)
-        
-        logging.info(f"Total found {len(all_data)} order records")
         
         if not all_data:
             return pd.DataFrame()
@@ -243,9 +272,19 @@ def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, p
                 f"FC {progress_ctx['fc_idx']}/{progress_ctx['total_fc']} | "
                 f"Rest {progress_ctx['rest_idx']}/{progress_ctx['total_rest']} | Copying"
             )
+        else:
+            # Fallback if no progress context
+            progress_prefix = "Copying"
 
         for idx, record in enumerate(all_data, 1):
             try:
+                # Get raw datetime (either placedtime or pickupdatetime)
+                raw_datetime = None
+                if record.get("placedtime_raw") is not None:
+                    raw_datetime = record["placedtime_raw"]
+                elif record.get("pickupdatetime_raw") is not None:
+                    raw_datetime = record["pickupdatetime_raw"]
+                
                 processed_record = {
                     "foodcourtid": str(record["_id"].get("foodcourt", "")),
                     "foodcourtname": record["_id"].get("foodcourtname", ""),
@@ -259,10 +298,11 @@ def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, p
                     "is_preorder": record.get("is_preorder", False),
                     "total_count": record.get("total_count", 0),
                     "total_price": record.get("total_price", 0.0),
+                    "raw_datetime": raw_datetime,  # Store raw datetime for IST conversion
                 }
                 processed_results.append(processed_record)
 
-                if progress_ctx and total_records:
+                if total_records > 0:
                     print_progress_bar(
                         idx,
                         total_records,
@@ -278,8 +318,54 @@ def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, p
             df = pd.DataFrame(processed_results)
             # Convert date to datetime
             df['date'] = pd.to_datetime(df['date'])
-            # Sort by date
-            df = df.sort_values('date').reset_index(drop=True)
+            
+            # Create date_IST column: convert raw datetime to IST, then extract date
+            ist = pytz.timezone('Asia/Kolkata')
+            date_ist_list = []
+            
+            for idx, raw_dt in enumerate(df['raw_datetime']):
+                if pd.isna(raw_dt) or raw_dt is None:
+                    # Fallback to existing date if raw datetime is missing
+                    date_ist_list.append(df.iloc[idx]['date'].date())
+                else:
+                    try:
+                        # Handle MongoDB datetime objects (BSON datetime)
+                        if hasattr(raw_dt, 'to_pydatetime'):
+                            # It's a pandas Timestamp
+                            dt = raw_dt
+                        elif isinstance(raw_dt, datetime):
+                            # It's a Python datetime
+                            dt = pd.Timestamp(raw_dt)
+                        else:
+                            # Convert string or other format to datetime
+                            dt = pd.to_datetime(raw_dt)
+                        
+                        # If datetime is timezone-naive, assume it's UTC
+                        if dt.tz is None:
+                            dt = dt.tz_localize(pytz.UTC)
+                        
+                        # Convert to IST
+                        dt_ist = dt.astimezone(ist)
+                        
+                        # Extract date (date only, no time)
+                        date_ist_list.append(dt_ist.date())
+                    except Exception as e:
+                        logging.warning(f"Error converting datetime to IST for record {idx}: {e}, using fallback date")
+                        # Fallback to existing date
+                        date_ist_list.append(df.iloc[idx]['date'].date())
+            
+            # Convert date_IST list to datetime and add to dataframe
+            df['date_IST'] = pd.to_datetime(date_ist_list)
+            
+            # Drop the temporary raw_datetime column
+            df = df.drop(columns=['raw_datetime'])
+            
+            # Sort by date_IST (primary) or date (fallback)
+            if 'date_IST' in df.columns:
+                df = df.sort_values('date_IST').reset_index(drop=True)
+            else:
+                df = df.sort_values('date').reset_index(drop=True)
+            
             return df
         else:
             return pd.DataFrame()
@@ -435,12 +521,8 @@ def append_to_report(stats, foodcourt_id, restaurant_id, is_first_restaurant=Fal
     # Append to CSV (create new file if doesn't exist, append if exists)
     if is_first_restaurant or not os.path.exists(report_csv_path):
         stats_df.to_csv(report_csv_path, index=False, encoding='utf-8', mode='w')
-        logging.info(f"✓ Created report file: {report_csv_path}")
     else:
         stats_df.to_csv(report_csv_path, index=False, encoding='utf-8', mode='a', header=False)
-        logging.info(f"✓ Appended to report: {len(stats)} rows")
-    
-    logging.info(f"  Report now contains statistics for restaurant: {restaurant_id}")
 
 
 def main():
@@ -479,34 +561,44 @@ def main():
         # Calculate total restaurants for progress tracking
         total_restaurants_all = sum(len(fc.get("restaurants", {})) for fc in progress.values())
         
-        # Iterate through foodcourts and restaurants
+        # Initialize counters
         processed_count = 0
         skipped_count = 0
-        for fc_idx, (foodcourt_id, foodcourt_data) in enumerate(progress.items(), 1):
+        
+        # PHASE 1: Check for incomplete restaurants
+        incomplete_restaurants = []
+        for foodcourt_id, foodcourt_data in progress.items():
             restaurants = foodcourt_data.get("restaurants", {})
-            city_id = foodcourt_data.get("cityId", "")
-            total_restaurants = len(restaurants)
-            
+            for restaurant_id, restaurant_data in restaurants.items():
+                is_completed = restaurant_data.get("is_completed", False)
+                if not is_completed:
+                    incomplete_restaurants.append((foodcourt_id, restaurant_id, restaurant_data))
+        
+        # PHASE 1: Process incomplete restaurants
+        if incomplete_restaurants:
             logging.info(f"\n{'='*60}")
-            logging.info(f"Processing Foodcourt: {foodcourt_id}")
-            logging.info(f"City ID: {city_id}")
-            logging.info(f"Restaurants: {len(restaurants)}")
+            logging.info(f"PHASE 1: Processing {len(incomplete_restaurants)} incomplete restaurants")
             logging.info(f"{'='*60}")
             
-            # Process each restaurant
-            for rest_idx, (restaurant_id, restaurant_data) in enumerate(restaurants.items(), 1):
-                logging.info(f"\nProcessing Restaurant: {restaurant_id}")
-                logging.info(
-                    f"[Foodcourt {fc_idx}/{total_foodcourts}] "
-                    f"[Restaurant {rest_idx}/{total_restaurants if total_restaurants else 1}]"
-                )
+            total_incomplete = len(incomplete_restaurants)
+            phase1_processed = 0
+            phase1_skipped = 0
+            
+            # Get foodcourt mapping for progress display
+            foodcourt_mapping = {}
+            for fc_idx, (fc_id, fc_data) in enumerate(progress.items(), 1):
+                foodcourt_mapping[fc_id] = fc_idx
+            
+            for idx, (foodcourt_id, restaurant_id, restaurant_data) in enumerate(incomplete_restaurants, 1):
+                # Get foodcourt index
+                fc_idx = foodcourt_mapping.get(foodcourt_id, 1)
                 
-                # Fetch orders for this restaurant
+                # Fetch orders for this restaurant (fetch all data)
                 progress_ctx = {
                     "fc_idx": fc_idx,
-                    "total_fc": total_foodcourts,
-                    "rest_idx": rest_idx,
-                    "total_rest": total_restaurants if total_restaurants else 1,
+                    "total_fc": len(progress),
+                    "rest_idx": idx,
+                    "total_rest": total_incomplete,
                 }
                 df = fetch_restaurant_orders(
                     collection,
@@ -515,38 +607,144 @@ def main():
                 )
                 
                 if df.empty:
-                    logging.warning(f"No orders found for restaurant {restaurant_id}")
+                    phase1_skipped += 1
                     skipped_count += 1
-                    # Skip to next restaurant if no data
+                    # Mark as completed even if no data
+                    if (foodcourt_id in progress and 
+                        "restaurants" in progress[foodcourt_id] and 
+                        restaurant_id in progress[foodcourt_id]["restaurants"]):
+                        progress[foodcourt_id]["restaurants"][restaurant_id]["is_completed"] = True
+                        with open(progress_json_path, 'w', encoding='utf-8') as f:
+                            json.dump(progress, f, indent=2, ensure_ascii=False)
                     continue
                 
                 # Only create folder structure when we have data
-                foodcourt_dir = os.path.join(food_court_data_path, foodcourt_id)
+                foodcourt_dir = os.path.join(fetched_data_path, foodcourt_id)
                 os.makedirs(foodcourt_dir, exist_ok=True)
                 
-                # Save to CSV
-                csv_path = os.path.join(foodcourt_dir, f"{restaurant_id}.csv")
-                df.to_csv(csv_path, index=False, encoding='utf-8')
-                logging.info(f"✓ Saved {len(df):,} records to {csv_path}")
-                logging.info(f"  Date range: {df['date'].min().date()} to {df['date'].max().date()}")
+                # Save to Parquet
+                parquet_path = os.path.join(foodcourt_dir, f"{restaurant_id}.parquet")
+                df.to_parquet(parquet_path, index=False, engine='pyarrow')
+                
+                # Calculate date range using date_IST if available, otherwise use date
+                date_col = 'date_IST' if 'date_IST' in df.columns else 'date'
+                starting_date = df[date_col].min().strftime('%Y-%m-%d')
+                ending_date = df[date_col].max().strftime('%Y-%m-%d')
+                
+                # Update progress JSON with starting_date, ending_date, and mark as completed
+                if (foodcourt_id in progress and 
+                    "restaurants" in progress[foodcourt_id] and 
+                    restaurant_id in progress[foodcourt_id]["restaurants"]):
+                    progress[foodcourt_id]["restaurants"][restaurant_id]["starting_date"] = starting_date
+                    progress[foodcourt_id]["restaurants"][restaurant_id]["ending_date"] = ending_date
+                    progress[foodcourt_id]["restaurants"][restaurant_id]["is_completed"] = True
+                    # Save progress JSON
+                    with open(progress_json_path, 'w', encoding='utf-8') as f:
+                        json.dump(progress, f, indent=2, ensure_ascii=False)
                 
                 # Calculate statistics and append to report
-                logging.info("  Calculating statistics and updating report...")
                 stats = calculate_restaurant_statistics(df, foodcourt_id, restaurant_id)
                 append_to_report(stats, foodcourt_id, restaurant_id, is_first_restaurant)
                 is_first_restaurant = False  # After first restaurant, always append
                 
+                phase1_processed += 1
                 processed_count += 1
         
-        # Final summary
-        logging.info("\n" + "="*60)
-        logging.info("PROCESSING COMPLETE")
-        logging.info("="*60)
-        logging.info(f"Total foodcourts processed: {total_foodcourts}")
-        logging.info(f"Total restaurants processed: {processed_count}")
-        logging.info(f"Total restaurants skipped (no data): {skipped_count}")
-        logging.info(f"Total restaurants in progress file: {total_restaurants_all}")
-        logging.info(f"✓ Report saved to: {report_csv_path}")
+        # PHASE 2: Check if all restaurants are complete, then update with newest data
+        all_complete = all(
+            restaurant_data.get("is_completed", False)
+            for foodcourt_data in progress.values()
+            for restaurant_data in foodcourt_data.get("restaurants", {}).values()
+        )
+        
+        if all_complete:
+            logging.info(f"\n{'='*60}")
+            logging.info(f"PHASE 2: All restaurants complete. Updating with newest data...")
+            logging.info(f"{'='*60}")
+            
+            updated_count = 0
+            phase2_skipped = 0
+            
+            # Iterate through all foodcourts and restaurants
+            for fc_idx, (foodcourt_id, foodcourt_data) in enumerate(progress.items(), 1):
+                restaurants = foodcourt_data.get("restaurants", {})
+                total_restaurants = len(restaurants)
+                
+                # Process each restaurant
+                for rest_idx, (restaurant_id, restaurant_data) in enumerate(restaurants.items(), 1):
+                    # Get existing ending_date to fetch only new data
+                    existing_ending_date = restaurant_data.get("ending_date")
+                    start_date = None
+                    if existing_ending_date:
+                        # Fetch data after the existing ending_date
+                        start_date = pd.to_datetime(existing_ending_date) + pd.Timedelta(days=1)
+                    
+                    # Fetch new orders for this restaurant
+                    progress_ctx = {
+                        "fc_idx": fc_idx,
+                        "total_fc": total_foodcourts,
+                        "rest_idx": rest_idx,
+                        "total_rest": total_restaurants if total_restaurants else 1,
+                    }
+                    df_new = fetch_restaurant_orders(
+                        collection,
+                        restaurant_id,
+                        progress_ctx=progress_ctx,
+                        start_date=start_date
+                    )
+                    
+                    if df_new.empty:
+                        phase2_skipped += 1
+                        skipped_count += 1
+                        continue
+                    
+                    # Load existing data if parquet file exists
+                    foodcourt_dir = os.path.join(fetched_data_path, foodcourt_id)
+                    parquet_path = os.path.join(foodcourt_dir, f"{restaurant_id}.parquet")
+                    
+                    if os.path.exists(parquet_path):
+                        df_existing = pd.read_parquet(parquet_path)
+                        # Merge: combine and remove duplicates
+                        df_combined = pd.concat([df_existing, df_new], ignore_index=True)
+                        # Remove duplicates based on key columns
+                        df_combined = df_combined.drop_duplicates(
+                            subset=['orderid', 'menuitemid', 'date', 'is_preorder'],
+                            keep='last'
+                        )
+                        df_combined = df_combined.sort_values('date').reset_index(drop=True)
+                    else:
+                        # No existing file, use only new data
+                        df_combined = df_new
+                    
+                    # Save combined data to Parquet
+                    os.makedirs(foodcourt_dir, exist_ok=True)
+                    df_combined.to_parquet(parquet_path, index=False, engine='pyarrow')
+                    
+                    # Update ending_date (starting_date remains the same) using date_IST if available
+                    date_col = 'date_IST' if 'date_IST' in df_combined.columns else 'date'
+                    new_ending_date = df_combined[date_col].max().strftime('%Y-%m-%d')
+                    existing_starting_date = restaurant_data.get("starting_date")
+                    if not existing_starting_date:
+                        existing_starting_date = df_combined[date_col].min().strftime('%Y-%m-%d')
+                    
+                    # Update progress JSON with new ending_date
+                    if (foodcourt_id in progress and 
+                        "restaurants" in progress[foodcourt_id] and 
+                        restaurant_id in progress[foodcourt_id]["restaurants"]):
+                        progress[foodcourt_id]["restaurants"][restaurant_id]["ending_date"] = new_ending_date
+                        if not progress[foodcourt_id]["restaurants"][restaurant_id].get("starting_date"):
+                            progress[foodcourt_id]["restaurants"][restaurant_id]["starting_date"] = existing_starting_date
+                        # Save progress JSON
+                        with open(progress_json_path, 'w', encoding='utf-8') as f:
+                            json.dump(progress, f, indent=2, ensure_ascii=False)
+                    
+                    updated_count += 1
+                    processed_count += 1
+        else:
+            pass  # Phase 2 skipped, no output needed
+        
+        # Final summary (minimal)
+        print(f"\nComplete: {processed_count} restaurants processed, {skipped_count} skipped")
         
     except Exception as e:
         logging.error(f"Error during execution: {e}")
@@ -554,7 +752,6 @@ def main():
         logging.debug(traceback.format_exc())
     finally:
         client.close()
-        logging.info("MongoDB connection closed")
 
 
 if __name__ == "__main__":
