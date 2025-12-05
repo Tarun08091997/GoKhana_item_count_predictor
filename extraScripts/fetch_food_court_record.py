@@ -8,7 +8,7 @@ import json
 import logging
 from pymongo import MongoClient
 from bson import ObjectId
-from config_parser import ConfigManger
+from src.util.config_parser import ConfigManger
 
 # Setup logging
 logging.basicConfig(

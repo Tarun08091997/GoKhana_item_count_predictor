@@ -1,0 +1,4 @@
+"""
+Dashboard pages package.
+"""
+

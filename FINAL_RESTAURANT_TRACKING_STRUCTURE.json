@@ -1,0 +1,134 @@
+{
+  "66b61a4e77e37900139eb827": {
+    "enrich_data": {
+      "error": false,
+      "file_name": "66751c8e3f015e001b2ed8b4_66b61322e52209001364ac33_66b61a4e77e37900139eb827_Chilly_Chicken_enrich_data.csv"
+    },
+    "preprocessing": {
+      "error": false,
+      "file_name": "66751c8e3f015e001b2ed8b4_66b61322e52209001364ac33_66b61a4e77e37900139eb827_Chilly_Chicken_preprocessing.csv"
+    },
+    "model_generation": {
+      "error": false,
+      "models": {
+        "XGBoost": {
+          "used": false,
+          "reason": "Insufficient data: less than 6 months of history required for XGBoost",
+          "training": {
+            "file_path": "output_data/trainedModel/FRI_LEVEL/results/66751c8e3f015e001b2ed8b4_66b61322e52209001364ac33_Chilly_Chicken_model_generation_XGBoost.xlsx",
+            "abs_avg_deviation": 0.0,
+            "abs_avg_error_pct": 0.0,
+            "abs_avg_deviation_capped": 0.0,
+            "abs_avg_error_pct_capped": 0.0,
+            "total_days": 0,
+            "active_days": 0
+          },
+          "validation": {
+            "file_path": "output_data/trainedModel/FRI_LEVEL/results/66751c8e3f015e001b2ed8b4_66b61322e52209001364ac33_Chilly_Chicken_model_generation_XGBoost.xlsx",
+            "abs_avg_deviation": 0.0,
+            "abs_avg_error_pct": 0.0,
+            "abs_avg_deviation_capped": 0.0,
+            "abs_avg_error_pct_capped": 0.0,
+            "total_days": 0,
+            "active_days": 0
+          }
+        },
+        "MovingAverage": {
+          "used": true,
+          "reason": "Selected as best model - sufficient data for moving average",
+          "training": {
+            "file_path": "output_data/trainedModel/FRI_LEVEL/results/66751c8e3f015e001b2ed8b4_66b61322e52209001364ac33_Chilly_Chicken_model_generation_MovingAverage.xlsx",
+            "abs_avg_deviation": 3.8,
+            "abs_avg_error_pct": 22.1,
+            "abs_avg_deviation_capped": 3.8,
+            "abs_avg_error_pct_capped": 22.1,
+            "total_days": 365,
+            "active_days": 320
+          },
+          "validation": {
+            "file_path": "output_data/trainedModel/FRI_LEVEL/results/66751c8e3f015e001b2ed8b4_66b61322e52209001364ac33_Chilly_Chicken_model_generation_MovingAverage.xlsx",
+            "abs_avg_deviation": 4.2,
+            "abs_avg_error_pct": 25.3,
+            "abs_avg_deviation_capped": 4.2,
+            "abs_avg_error_pct_capped": 25.3,
+            "total_days": 90,
+            "active_days": 75
+          }
+        },
+        "WeeklyMovingAverage": {
+          "used": false,
+          "reason": "Not selected - MovingAverage performed better",
+          "training": {
+            "file_path": "output_data/trainedModel/FRI_LEVEL/results/66751c8e3f015e001b2ed8b4_66b61322e52209001364ac33_Chilly_Chicken_model_generation_WeeklyMovingAverage.xlsx",
+            "abs_avg_deviation": 4.5,
+            "abs_avg_error_pct": 26.8,
+            "abs_avg_deviation_capped": 4.5,
+            "abs_avg_error_pct_capped": 26.8,
+            "total_days": 365,
+            "active_days": 320
+          },
+          "validation": {
+            "file_path": "output_data/trainedModel/FRI_LEVEL/results/66751c8e3f015e001b2ed8b4_66b61322e52209001364ac33_Chilly_Chicken_model_generation_WeeklyMovingAverage.xlsx",
+            "abs_avg_deviation": 5.1,
+            "abs_avg_error_pct": 29.2,
+            "abs_avg_deviation_capped": 5.1,
+            "abs_avg_error_pct_capped": 29.2,
+            "total_days": 90,
+            "active_days": 75
+          }
+        }
+      }
+    },
+    "postprocessing": {
+      "error": false,
+      "file_name": "66751c8e3f015e001b2ed8b4_66b61322e52209001364ac33_66b61a4e77e37900139eb827_Chilly_Chicken_postprocessing.csv",
+      "models": {
+        "MovingAverage": {
+          "training": {
+            "abs_avg_deviation": 3.6,
+            "abs_avg_error_pct": 21.2,
+            "abs_avg_deviation_capped": 3.6,
+            "abs_avg_error_pct_capped": 21.2,
+            "total_days": 365,
+            "active_days": 320
+          },
+          "validation": {
+            "abs_avg_deviation": 4.0,
+            "abs_avg_error_pct": 24.1,
+            "abs_avg_deviation_capped": 4.0,
+            "abs_avg_error_pct_capped": 24.1,
+            "total_days": 90,
+            "active_days": 75
+          }
+        }
+      }
+    },
+    "compiled_results": {
+      "error": false,
+      "capped_summary": {
+        "model": "MovingAverage",
+        "postProcessing_used": true,
+        "abs_avg_deviation": 4.0,
+        "abs_avg_accuracy": 75.9
+      },
+      "original_summary": {
+        "total_days": 90,
+        "active_days": 75,
+        "models_count": 3,
+        "models_tried": ["XGBoost", "MovingAverage", "WeeklyMovingAverage"],
+        "model_selected": "MovingAverage"
+      }
+    }
+  },
+  "66d16d3cd9f454001b4690c4": {
+    "enrich_data": {
+      "error": false,
+      "file_name": "66751c8e3f015e001b2ed8b4_66b61322e52209001364ac33_66d16d3cd9f454001b4690c4_Chilly_Chicken_enrich_data.csv"
+    },
+    "preprocessing": {
+      "error": true,
+      "error_message": "Insufficient data: less than 6 months of history"
+    }
+  }
+}
+

@@ -2,4 +2,5 @@
 config/config.json
 venv/
 input_data/
+output_data/
 

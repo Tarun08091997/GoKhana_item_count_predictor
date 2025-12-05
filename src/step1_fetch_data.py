@@ -1,8 +1,44 @@
 """
-Script to fetch foodorder data per restaurant from MongoDB.
-Fetches orders filtered by restaurant_id (data.parentId) and orderstatus="completed".
-Saves data to Parquet files in input_data/fetched_data/{foodcourt_id}/{restaurant_id}.parquet
-Only creates folder structure when there's actual data to save.
+End-to-end pipeline to pull historical restaurant orders from MongoDB,
+enrich them with derived fields, and persist both structured data and
+summary statistics used downstream.
+
+High-level flow
+---------------
+1. Read mongo + progress config files and connect to the `foodorder`
+   collection.
+2. Discover every foodcourt / restaurant pair from
+   `input_data/FR_data.json`.
+3. For each restaurant:
+   - Run two aggregation pipelines (regular orders + preorders) to pull
+     all completed orders after the optional `start_date`.
+   - Explode every `data.items` entry to one row per menu item sold.
+   - Aggregate by (foodcourt, restaurant, menu item, order, date) to get
+     total quantity and revenue per item/day.
+   - Reconstruct an IST-localized `date_IST` column, build per-item
+     statistics, and append human-readable summaries to
+     `input_data/restaurant_report.csv`.
+   - Write the raw enriched dataset to Parquet under
+     `input_data/fetched_data/{foodcourt}/{restaurant}.parquet` and mark
+     the restaurant as complete in `FR_data.json`.
+4. Once every restaurant has an initial snapshot, re-run in “Phase 2”
+   mode to append incremental data beyond the previous ending date.
+
+Columns produced in the Parquet output
+--------------------------------------
+- `foodcourtid` / `foodcourtname`: Mongo identifiers and display names.
+- `restaurant` / `restaurantname`: Restaurant identifiers and names.
+- `menuitemid` / `itemname`: Menu item identifier and name.
+- `orderid`: Unique order reference in GoKhana.
+- `date`: Sales date (string, yyyy-mm-dd, derived in IST).
+- `date_IST`: pandas datetime localized to IST for precise ordering.
+- `orderstatus`: Should always be `completed` (filter enforcement).
+- `is_preorder`: Boolean flag; True if pulled from preorder pipeline.
+- `total_count`: Quantity sold for that item/order/date grouping.
+- `total_price`: Revenue for that grouping (totalprice fallback to price).
+- `raw_datetime`: Internal helper used during processing (removed before save).
+- Additional stats (outside the Parquet) include per-item totals,
+  average per day metrics, order counts, and restaurant date ranges.
 """
 
 import os
@@ -14,7 +50,8 @@ import pytz
 from datetime import datetime
 from pymongo import MongoClient
 from bson import ObjectId
-from config_parser import ConfigManger
+from src.util.config_parser import ConfigManger
+from src.util.progress_bar import ProgressBar
 
 # Setup logging
 logging.basicConfig(
@@ -34,22 +71,12 @@ collection_name = cloud_config["mongodb"]["collection_name"]
 # Get paths
 current_path = os.path.dirname(os.path.abspath(__file__))
 input_data_path = os.path.join(current_path, "input_data")
-progress_json_path = os.path.join(input_data_path, "fetch_progress.json")
+progress_json_path = os.path.join(input_data_path, "FR_data.json")
 fetched_data_path = os.path.join(input_data_path, "fetched_data")
 report_csv_path = os.path.join(input_data_path, "restaurant_report.csv")
 
 
-def print_progress_bar(iteration, total, prefix='', suffix='', decimals=1, length=30, fill='█'):
-    """Print a progress bar to the console."""
-    if total == 0:
-        return
-    percent = f"{100 * (iteration / float(total)):.{decimals}f}"
-    filled_length = int(length * iteration // total)
-    bar = fill * filled_length + '-' * (length - filled_length)
-    sys.stdout.write(f'\r{prefix} |{bar}| {percent}% {suffix}')
-    sys.stdout.flush()
-    if iteration >= total:
-        sys.stdout.write('\n')
+# Progress bar functionality moved to pipeline_utils.ProgressBar
 
 
 def get_mongo_collection(connection_string, database_nm, collection_nm):
@@ -276,6 +303,17 @@ def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, p
             # Fallback if no progress context
             progress_prefix = "Copying"
 
+        # Initialize progress bar
+        progress = None
+        if total_records > 0:
+            progress = ProgressBar(
+                total=total_records,
+                prefix=progress_prefix,
+                suffix="records",
+                length=40,
+                show_elapsed=False
+            )
+        
         for idx, record in enumerate(all_data, 1):
             try:
                 # Get raw datetime (either placedtime or pickupdatetime)
@@ -302,14 +340,8 @@ def fetch_restaurant_orders(collection, restaurant_id, include_preorders=True, p
                 }
                 processed_results.append(processed_record)
 
-                if total_records > 0:
-                    print_progress_bar(
-                        idx,
-                        total_records,
-                        prefix=progress_prefix,
-                        suffix=f"{idx}/{total_records} records",
-                        length=40
-                    )
+                if progress:
+                    progress.set_current(idx)
             except Exception as e:
                 logging.warning(f"Skipping record due to error: {e}")
                 continue
@@ -525,11 +557,34 @@ def append_to_report(stats, foodcourt_id, restaurant_id, is_first_restaurant=Fal
         stats_df.to_csv(report_csv_path, index=False, encoding='utf-8', mode='a', header=False)
 
 
-def main():
-    """Main function to fetch restaurant orders."""
+def main(prod_mode: bool = False):
+    """Main function to fetch restaurant orders.
+
+    When prod_mode is False, we assume fetched_data already contains the latest
+    parquet exports and skip hitting MongoDB. This avoids unnecessary network
+    calls when we only need to reuse existing data.
+    """
     logging.info("=" * 60)
     logging.info("Fetching Restaurant Orders")
     logging.info("=" * 60)
+    
+    if not prod_mode:
+        if not os.path.exists(fetched_data_path):
+            logging.error("Cached fetched_data directory not found at %s", fetched_data_path)
+            logging.error("Please run with --prod-mode once to generate the parquet files.")
+            return
+        
+        foodcourt_dirs = [
+            d for d in os.listdir(fetched_data_path)
+            if os.path.isdir(os.path.join(fetched_data_path, d))
+        ]
+        logging.info(
+            "Production mode disabled; using cached data from %s (foodcourts: %d)",
+            fetched_data_path,
+            len(foodcourt_dirs),
+        )
+        logging.info("Skipping MongoDB fetch since no new data should be pulled.")
+        return
     
     # Load progress JSON
     if not os.path.exists(progress_json_path):
@@ -755,5 +810,14 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Fetch restaurant order data")
+    parser.add_argument(
+        "--prod-mode",
+        action="store_true",
+        help="Enable production mode to fetch fresh data from MongoDB",
+    )
+    args = parser.parse_args()
+    main(prod_mode=args.prod_mode)
 

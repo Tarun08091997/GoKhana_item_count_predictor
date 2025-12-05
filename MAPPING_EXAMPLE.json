@@ -1,0 +1,71 @@
+{
+  "foodcourts": {
+    "5f338dce8f277f4c2f4ac99f": "Tech Park Food Court",
+    "66751c8e3f015e001b2ed8b4": "Downtown Mall Food Court"
+  },
+  "restaurants": {
+    "65fc218c0858ce0012f959b7": "Spice Garden Restaurant",
+    "66b61322e52209001364ac33": "Pizza Corner"
+  },
+  "items": {
+    "65fd1da416890e00112acc96": "Butter Cookie",
+    "66b61a4e77e37900139eb827": "Chilly Chicken",
+    "65fd1da416890e00112acca6": "Regular Chai"
+  },
+  "foodcourt_id_to_name": {
+    "5f338dce8f277f4c2f4ac99f": "Tech Park Food Court",
+    "66751c8e3f015e001b2ed8b4": "Downtown Mall Food Court"
+  },
+  "restaurant_id_to_name": {
+    "65fc218c0858ce0012f959b7": "Spice Garden Restaurant",
+    "66b61322e52209001364ac33": "Pizza Corner"
+  },
+  "item_id_to_name": {
+    "65fd1da416890e00112acc96": "Butter Cookie",
+    "66b61a4e77e37900139eb827": "Chilly Chicken",
+    "65fd1da416890e00112acca6": "Regular Chai"
+  },
+  "foodcourt_id_to_restaurant_ids": {
+    "5f338dce8f277f4c2f4ac99f": [
+      "65fc218c0858ce0012f959b7",
+      "66b61322e52209001364ac33"
+    ],
+    "66751c8e3f015e001b2ed8b4": [
+      "66b61322e52209001364ac33"
+    ]
+  },
+  "restaurant_id_to_foodcourt_id": {
+    "65fc218c0858ce0012f959b7": "5f338dce8f277f4c2f4ac99f",
+    "66b61322e52209001364ac33": "5f338dce8f277f4c2f4ac99f"
+  },
+  "restaurant_id_to_item_ids": {
+    "65fc218c0858ce0012f959b7": [
+      "65fd1da416890e00112acc96",
+      "65fd1da416890e00112acca6"
+    ],
+    "66b61322e52209001364ac33": [
+      "66b61a4e77e37900139eb827"
+    ]
+  },
+  "item_id_to_restaurant_id": {
+    "65fd1da416890e00112acc96": "65fc218c0858ce0012f959b7",
+    "66b61a4e77e37900139eb827": "66b61322e52209001364ac33",
+    "65fd1da416890e00112acca6": "65fc218c0858ce0012f959b7"
+  },
+  "foodcourt_id_to_item_ids": {
+    "5f338dce8f277f4c2f4ac99f": [
+      "65fd1da416890e00112acc96",
+      "66b61a4e77e37900139eb827",
+      "65fd1da416890e00112acca6"
+    ],
+    "66751c8e3f015e001b2ed8b4": [
+      "66b61a4e77e37900139eb827"
+    ]
+  },
+  "item_id_to_foodcourt_id": {
+    "65fd1da416890e00112acc96": "5f338dce8f277f4c2f4ac99f",
+    "66b61a4e77e37900139eb827": "5f338dce8f277f4c2f4ac99f",
+    "65fd1da416890e00112acca6": "5f338dce8f277f4c2f4ac99f"
+  }
+}
+

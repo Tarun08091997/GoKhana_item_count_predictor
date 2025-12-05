@@ -4,4 +4,10 @@ numpy>=1.23.0
 python-dateutil>=2.8.0
 pyarrow>=10.0.0
 pytz>=2023.3
+openpyxl>=3.0.0
+xgboost>=2.0.0
+prophet>=1.1.4
+# neuralforecast>=1.6.0  # Optional: Requires ray>=2.2.0 which may not be available on Windows/Python 3.13
+# statsforecast>=1.7.0  # Installed but doesn't include NBEATS model
+streamlit>=1.28.0
 

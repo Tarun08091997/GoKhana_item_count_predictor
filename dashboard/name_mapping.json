@@ -1,0 +1,2010 @@
+{
+  "foodcourt_id_to_name": {
+    "fc1": "FoodCourt 1",
+    "5f338dce8f277f4c2f4ac99f": "CG-EPIP Kakadu-BLR",
+    "61862d3cc680d0688d9d3139": "CG-S48-GUR",
+    "628f0b429f179d6efab94aa1": "Natwest-2A-GUR",
+    "63245d4de5aff648ca6109f0": "S&P Global Skyview - HYD",
+    "651ba1552d0b1d001b6c2e53": "Air India-Santacruz-MUM",
+    "65b48ebd8d7d8f001be02f79": "Air India-Aviation Academy-GUR",
+    "62b976e8a94ae70e02f47540": "CG-DV B5-BLR",
+    "66fb796c232d1500137baf13": "Air India-Tower 3-GUR",
+    "633ac3e6f502b233052bd11f": "S&P Global-Ambience-GUR",
+    "62122f42e9692355fc21cd37": "Natwest-Kosmo1-CHN (Ground Floor)",
+    "655b3bdca4a02d001bcb78c3": "CG-Sipcot-Phase 1-CHN",
+    "66751c8e3f015e001b2ed8b4": "Sodexo-CG-Campus-HYD",
+    "64deefcd895a9b001b1517a9": "Air India-Tower 2-GUR",
+    "6344e94b2db92732f3849cd4": "S&P Global-Prahlad Nagar-AHD",
+    "620c8839d1702023497f3e64": "CG-Candor A3-KOL",
+    "621243047b7da3595490b804": "Natwest-1A-GUR (Ground Floor)",
+    "5f3652cde091b809e2467d96": "CG-DV A5-BLR",
+    "618607cac665f41f98e72227": "CG-PTP-BLR",
+    "64e33cca77a4b10017691075": "Air India-Tower 4-GUR",
+    "61529bb6364f2332c0fe8b1c": "CG-Sipcot-CHN",
+    "66ffbf790724f300133f7c22": "CG Technopolis- Sec 5- KOL",
+    "66751bbe191e5a001af454d4": "Sodexo-CG GAR-HYD",
+    "6051d1f64ec6952ca5b45dba": "CG-Ecospace 6B-BLR",
+    "60f172e2d1b6e328e744cf65": "CG-Cyber Towers-CHN",
+    "667da1a6b159bc001a9160b6": "Air India-Tower 5-GUR",
+    "63245df1f909bf484ba32e5f": "S&P Global-Orion-HYD",
+    "63d74931822179001b3c8320": "CG-DV A6-BLR",
+    "62720dcd1410b643ccc5eaf0": "CG-DV B4-BLR",
+    "6272117f6ea9037357d4559e": "CG-Campus-BLR",
+    "61e39f4b2acc405ba5c12202": "CG-S82-NOI",
+    "61860f8c2d415a4a5c52e822": "CG-ASV-CHN",
+    "63469408bcf1a078aa63687c": "S&P Global-S62-NOI",
+    "6368b12ed2915c10f4b68571": "Natwest-Kosmo1-CHN (8th Floor)"
+  },
+  "foodcourt_name_to_id": {
+    "FoodCourt 1": "fc1",
+    "CG-EPIP Kakadu-BLR": "5f338dce8f277f4c2f4ac99f",
+    "CG-S48-GUR": "61862d3cc680d0688d9d3139",
+    "Natwest-2A-GUR": "628f0b429f179d6efab94aa1",
+    "S&P Global Skyview - HYD": "63245d4de5aff648ca6109f0",
+    "Air India-Santacruz-MUM": "651ba1552d0b1d001b6c2e53",
+    "Air India-Aviation Academy-GUR": "65b48ebd8d7d8f001be02f79",
+    "CG-DV B5-BLR": "62b976e8a94ae70e02f47540",
+    "Air India-Tower 3-GUR": "66fb796c232d1500137baf13",
+    "S&P Global-Ambience-GUR": "633ac3e6f502b233052bd11f",
+    "Natwest-Kosmo1-CHN (Ground Floor)": "62122f42e9692355fc21cd37",
+    "CG-Sipcot-Phase 1-CHN": "655b3bdca4a02d001bcb78c3",
+    "Sodexo-CG-Campus-HYD": "66751c8e3f015e001b2ed8b4",
+    "Air India-Tower 2-GUR": "64deefcd895a9b001b1517a9",
+    "S&P Global-Prahlad Nagar-AHD": "6344e94b2db92732f3849cd4",
+    "CG-Candor A3-KOL": "620c8839d1702023497f3e64",
+    "Natwest-1A-GUR (Ground Floor)": "621243047b7da3595490b804",
+    "CG-DV A5-BLR": "5f3652cde091b809e2467d96",
+    "CG-PTP-BLR": "618607cac665f41f98e72227",
+    "Air India-Tower 4-GUR": "64e33cca77a4b10017691075",
+    "CG-Sipcot-CHN": "61529bb6364f2332c0fe8b1c",
+    "CG Technopolis- Sec 5- KOL": "66ffbf790724f300133f7c22",
+    "Sodexo-CG GAR-HYD": "66751bbe191e5a001af454d4",
+    "CG-Ecospace 6B-BLR": "6051d1f64ec6952ca5b45dba",
+    "CG-Cyber Towers-CHN": "60f172e2d1b6e328e744cf65",
+    "Air India-Tower 5-GUR": "667da1a6b159bc001a9160b6",
+    "S&P Global-Orion-HYD": "63245df1f909bf484ba32e5f",
+    "CG-DV A6-BLR": "63d74931822179001b3c8320",
+    "CG-DV B4-BLR": "62720dcd1410b643ccc5eaf0",
+    "CG-Campus-BLR": "6272117f6ea9037357d4559e",
+    "CG-S82-NOI": "61e39f4b2acc405ba5c12202",
+    "CG-ASV-CHN": "61860f8c2d415a4a5c52e822",
+    "S&P Global-S62-NOI": "63469408bcf1a078aa63687c",
+    "Natwest-Kosmo1-CHN (8th Floor)": "6368b12ed2915c10f4b68571"
+  },
+  "restaurant_name_to_id": {
+    "Restaurant 1": "rest1",
+    "Meals -Veg Counter (CG-Kakadu)": "64535d907b196c00173b9087",
+    "Khansamas (Meal)": "61a6181a15bc1b50911379b8",
+    "Khansamas (Live)": "6281eb08e5062e7fdd61a628",
+    "U and I Cafe (CG-GUR)": "6787888768109c001385214b",
+    "Go Meal -Coriander(NWG-2A)": "67dd3e7ae70f5d0013ae1b0d",
+    "Go Meal (S&P-Skyview).": "687894244fc611001a413d5c",
+    "Go Meal by Northwala": "68b699ed1bc7b7001aa1bdcf",
+    "Khansamas -Meals (Aviation -GUR)": "65b491f70b4593001c7abcab",
+    "Cape Komorin Cafe (Air India-Aviation Academy-GUR)": "678f6cfcf8cc1b0013aae888",
+    "Chai Era (Aviation -GUR)": "6815ab5b1a9ebe001ac189d6",
+    "Gwalia Express (CG-B5)": "68bbc6666671bc001ac2aff6",
+    "Cape Komorin Cafe (South Indian) - Tower 3": "66fb953b4b79fd00134dd9e7",
+    "Manjap Meals - Air India Tower 3": "67595f3ca3c638001ab39b32",
+    "Coriander (S&P ambience- GUR)": "66655b0a202594001a75bcb1",
+    "Go-Cafe (Botaniq Foods)": "662250be19a7b6001ac4a8ac",
+    "Veg Meals - MONONITES (Ground Floor)": "6884a4660a2413001abcfeac",
+    "Hot Plates (Meal and Snacks) - Sipcot - Phase 1": "674084877dabfe001a8961ff",
+    "Zyn Kitchen Factory - Meals (Sipcot Phase 1)": "6765151f0724f300133fcfd4",
+    "Home Favoureats (Combos) - First Floor": "6675401b27db94001a09b686",
+    "Home Favoureats (Non Veg) - Second Floor": "667560c488e8060019c784dd",
+    "Home Favoureats Veg (Second Floor)": "67931970bc4818001334919d",
+    "Khansamas - Meals (Air India - T2)": "63f49b896c60ed001aa08849",
+    "Chatkara (Air India-GUR)": "64df04908a0816001b300ca3",
+    "Go Meal (S&P Ahmedabad)": "6344eed430ea5e3b5b617c5b",
+    "Go Tuck (S&P Ahmedabad)": "642a5a3abe27fc00173ac498",
+    "Meals -Non Veg Counter (Kakadu -BLR)": "64633e15e096c7001bf6ab32",
+    "Thali Tales (Main Meal A2 Ground floor) - 8.30 AM - 11.00 PM": "67b98d63ee768c001bcd986f",
+    "Bite Hub (CG-KOL, A3 1st floor) - 8.00 AM to 8.00 PM": "684e6fc18fe8f6001acff516",
+    "Wok Whisper (CG-KOL,A2 Ground Floor) - 12.00 PM to 8.00 PM": "684fbf3dab3146001aa7031d",
+    "Thali Tales (Meals 1st Floor A3) - 8.30 AM - 7.30 PM": "685b978115eb22001361590a",
+    "GoChai (NWG 1A)": "64e9c3567b984a00173a752d",
+    "Go Meal -Coriander (NWG 1A)": "67d26849fc2b44001ae6a817",
+    "Go Live -Coriander (NWG 1A)": "67dd3dcb1c72b600197f1168",
+    "Alvas (South Meal - A5)": "6004167c1595960a72f31707",
+    "Alvas (North Meal - A5)": "60599bd4b6dfef46f7241fef",
+    "Alvas (Non-Veg Meal - A5)": "6296dc1c8eeb0973341fc168",
+    "Alvas (Tiffin Express - A5)": "629b32fde44c8e62a76400f7",
+    "SLV Enterprises (Tuck Shop)": "61866983cbd33c2fa05aa2bb",
+    "SLV Enterprices (Go Meal).": "638458e1915f54780b60c644",
+    "Manjap Meals - Air India": "6397f84ed6a6982bfd8544f7",
+    "GoChai (Air India-GUR)": "64defbea1cf0c4001728c0aa",
+    "Hot Plates (Meal and Snacks) - Sipcot": "663a126b5ea697001a21c0b2",
+    "Zyn Kitchen Factory -Meals (CG Sipcot)": "675c1bfe7dabfe001a89a643",
+    "Thali Tales Main Meals (CG-Technopolis) - 12.30 AM - 3.30 PM": "684960b19b9a87001a77b8be",
+    "Flavours-Healthy Counter-Ground Floor": "66eab36ca2fa79001337411e",
+    "SLV Enterprices (Veg Meal And Dosa)": "6053268e4ec6952ca5b46330",
+    "SLV Enterprices (Juice Magic)": "626f96886ea9037357d4496d",
+    "SLV Enterprises (Non - Veg)": "6376054fc09df47d4015b813",
+    "Zyn Kitchen Factory - Non Veg Meal": "675c1f7effb223001aad0e6a",
+    "Zyn Kitchen Factory - Veg Meal.": "67a1ccc868109c00138558a9",
+    "Little North": "67a4e64aa334d00013a10be7",
+    "Go Tuck (ECR Bakers)": "6881e7a47266d6001957aba9",
+    "Khansamas-Meals(Air India-T5)": "667e4ff17bd01f001a6ec74e",
+    "Snack On (Air India - T5)": "66ab376ee522090013648938",
+    "Go Meal (S&P-Orion).": "687895f2fc72bd001be3942a",
+    "Alvas ( Non Veg )": "6482d8614f5bd6001ba34682",
+    "Veg Meal (CG-A6)": "66e3f26496ec49001a8e042a",
+    "BURGER'S JAG (CG-A6)": "680a24fab8772b001a09a05d",
+    "Alvas (Non Veg Meal-B4)": "630c2f4b1d03704a4b9d5774",
+    "Healthy Bhi (CG-B4)": "64a4439f929d03001b232c79",
+    "Cafe Annapoorna (CG-B4)": "667d3aa4f9b003001a0a3825",
+    "Levista (CG-B4)": "66b48466824872001381c753",
+    "Go Meal (CG-B4)": "66e3f3ef439ddc001aa23ae2",
+    "Gwalia Express - North Indian Combo and Live  Counter": "68baf395228b96001a58ef4a",
+    "Annapoorna Cafe- Meals": "66c2f662f616ee0013485ce4",
+    "Coastal Kitchen (CG Campus)": "68550c3a9dd89a001a32a7e5",
+    "Arsh Foods (Go Meal)": "61e3a3cc77eb426ff13294b8",
+    "Dreams Unlimited (Go Tuck)": "6281f1916d5a3f5e1dbdacc6",
+    "GoChai (CG-NOIDA)": "652f91a6feb690001008df55",
+    "Go Tuck (Arsh Foods & Beverages) Tower B": "667da2f5236e16001a7a4a60",
+    "Cafe 9 (Go Snacks)": "684a855ebd30fd001a1bd0a1",
+    "Zyn Kitchen Factory - Non-Veg Meal": "677f7350cceeca001339c24a",
+    "ZYN Kitchen Factory - Veg Meal": "67a4bb46f8cc1b0013ab12a8",
+    "Little North.": "67a4e075c962240014f7edc8",
+    "Go Tuck (S&P - Noida)": "6346b2651b3f3d42ec4f7eb5",
+    "Go Meal (S&P-Noida)": "663b130d27bf180013bf1abf",
+    "Veg Meals - MONONITES (8TH Floor)": "6880dd3a38ecce001a8077aa",
+    "Veg Live - MONONITES (8TH Floor)": "6880e17c07a321001a92f4a3",
+    "Go Meal (Non-Veg- Gokulam Park (8thFloor)": "689446b33bf1e0001a2b4310"
+  },
+  "restaurant_id_to_name": {
+    "rest1": "Restaurant 1",
+    "64535d907b196c00173b9087": "Meals -Veg Counter (CG-Kakadu)",
+    "61a6181a15bc1b50911379b8": "Khansamas (Meal)",
+    "6281eb08e5062e7fdd61a628": "Khansamas (Live)",
+    "6787888768109c001385214b": "U and I Cafe (CG-GUR)",
+    "67dd3e7ae70f5d0013ae1b0d": "Go Meal -Coriander(NWG-2A)",
+    "687894244fc611001a413d5c": "Go Meal (S&P-Skyview).",
+    "68b699ed1bc7b7001aa1bdcf": "Go Meal by Northwala",
+    "65b491f70b4593001c7abcab": "Khansamas -Meals (Aviation -GUR)",
+    "678f6cfcf8cc1b0013aae888": "Cape Komorin Cafe (Air India-Aviation Academy-GUR)",
+    "6815ab5b1a9ebe001ac189d6": "Chai Era (Aviation -GUR)",
+    "68bbc6666671bc001ac2aff6": "Gwalia Express (CG-B5)",
+    "66fb953b4b79fd00134dd9e7": "Cape Komorin Cafe (South Indian) - Tower 3",
+    "67595f3ca3c638001ab39b32": "Manjap Meals - Air India Tower 3",
+    "66655b0a202594001a75bcb1": "Coriander (S&P ambience- GUR)",
+    "662250be19a7b6001ac4a8ac": "Go-Cafe (Botaniq Foods)",
+    "6884a4660a2413001abcfeac": "Veg Meals - MONONITES (Ground Floor)",
+    "674084877dabfe001a8961ff": "Hot Plates (Meal and Snacks) - Sipcot - Phase 1",
+    "6765151f0724f300133fcfd4": "Zyn Kitchen Factory - Meals (Sipcot Phase 1)",
+    "6675401b27db94001a09b686": "Home Favoureats (Combos) - First Floor",
+    "667560c488e8060019c784dd": "Home Favoureats (Non Veg) - Second Floor",
+    "67931970bc4818001334919d": "Home Favoureats Veg (Second Floor)",
+    "63f49b896c60ed001aa08849": "Khansamas - Meals (Air India - T2)",
+    "64df04908a0816001b300ca3": "Chatkara (Air India-GUR)",
+    "6344eed430ea5e3b5b617c5b": "Go Meal (S&P Ahmedabad)",
+    "642a5a3abe27fc00173ac498": "Go Tuck (S&P Ahmedabad)",
+    "64633e15e096c7001bf6ab32": "Meals -Non Veg Counter (Kakadu -BLR)",
+    "67b98d63ee768c001bcd986f": "Thali Tales (Main Meal A2 Ground floor) - 8.30 AM - 11.00 PM",
+    "684e6fc18fe8f6001acff516": "Bite Hub (CG-KOL, A3 1st floor) - 8.00 AM to 8.00 PM",
+    "684fbf3dab3146001aa7031d": "Wok Whisper (CG-KOL,A2 Ground Floor) - 12.00 PM to 8.00 PM",
+    "685b978115eb22001361590a": "Thali Tales (Meals 1st Floor A3) - 8.30 AM - 7.30 PM",
+    "64e9c3567b984a00173a752d": "GoChai (NWG 1A)",
+    "67d26849fc2b44001ae6a817": "Go Meal -Coriander (NWG 1A)",
+    "67dd3dcb1c72b600197f1168": "Go Live -Coriander (NWG 1A)",
+    "6004167c1595960a72f31707": "Alvas (South Meal - A5)",
+    "60599bd4b6dfef46f7241fef": "Alvas (North Meal - A5)",
+    "6296dc1c8eeb0973341fc168": "Alvas (Non-Veg Meal - A5)",
+    "629b32fde44c8e62a76400f7": "Alvas (Tiffin Express - A5)",
+    "61866983cbd33c2fa05aa2bb": "SLV Enterprises (Tuck Shop)",
+    "638458e1915f54780b60c644": "SLV Enterprices (Go Meal).",
+    "6397f84ed6a6982bfd8544f7": "Manjap Meals - Air India",
+    "64defbea1cf0c4001728c0aa": "GoChai (Air India-GUR)",
+    "663a126b5ea697001a21c0b2": "Hot Plates (Meal and Snacks) - Sipcot",
+    "675c1bfe7dabfe001a89a643": "Zyn Kitchen Factory -Meals (CG Sipcot)",
+    "684960b19b9a87001a77b8be": "Thali Tales Main Meals (CG-Technopolis) - 12.30 AM - 3.30 PM",
+    "66eab36ca2fa79001337411e": "Flavours-Healthy Counter-Ground Floor",
+    "6053268e4ec6952ca5b46330": "SLV Enterprices (Veg Meal And Dosa)",
+    "626f96886ea9037357d4496d": "SLV Enterprices (Juice Magic)",
+    "6376054fc09df47d4015b813": "SLV Enterprises (Non - Veg)",
+    "675c1f7effb223001aad0e6a": "Zyn Kitchen Factory - Non Veg Meal",
+    "67a1ccc868109c00138558a9": "Zyn Kitchen Factory - Veg Meal.",
+    "67a4e64aa334d00013a10be7": "Little North",
+    "6881e7a47266d6001957aba9": "Go Tuck (ECR Bakers)",
+    "667e4ff17bd01f001a6ec74e": "Khansamas-Meals(Air India-T5)",
+    "66ab376ee522090013648938": "Snack On (Air India - T5)",
+    "687895f2fc72bd001be3942a": "Go Meal (S&P-Orion).",
+    "6482d8614f5bd6001ba34682": "Alvas ( Non Veg )",
+    "66e3f26496ec49001a8e042a": "Veg Meal (CG-A6)",
+    "680a24fab8772b001a09a05d": "BURGER'S JAG (CG-A6)",
+    "630c2f4b1d03704a4b9d5774": "Alvas (Non Veg Meal-B4)",
+    "64a4439f929d03001b232c79": "Healthy Bhi (CG-B4)",
+    "667d3aa4f9b003001a0a3825": "Cafe Annapoorna (CG-B4)",
+    "66b48466824872001381c753": "Levista (CG-B4)",
+    "66e3f3ef439ddc001aa23ae2": "Go Meal (CG-B4)",
+    "68baf395228b96001a58ef4a": "Gwalia Express - North Indian Combo and Live  Counter",
+    "66c2f662f616ee0013485ce4": "Annapoorna Cafe- Meals",
+    "68550c3a9dd89a001a32a7e5": "Coastal Kitchen (CG Campus)",
+    "61e3a3cc77eb426ff13294b8": "Arsh Foods (Go Meal)",
+    "6281f1916d5a3f5e1dbdacc6": "Dreams Unlimited (Go Tuck)",
+    "652f91a6feb690001008df55": "GoChai (CG-NOIDA)",
+    "667da2f5236e16001a7a4a60": "Go Tuck (Arsh Foods & Beverages) Tower B",
+    "684a855ebd30fd001a1bd0a1": "Cafe 9 (Go Snacks)",
+    "677f7350cceeca001339c24a": "Zyn Kitchen Factory - Non-Veg Meal",
+    "67a4bb46f8cc1b0013ab12a8": "ZYN Kitchen Factory - Veg Meal",
+    "67a4e075c962240014f7edc8": "Little North.",
+    "6346b2651b3f3d42ec4f7eb5": "Go Tuck (S&P - Noida)",
+    "663b130d27bf180013bf1abf": "Go Meal (S&P-Noida)",
+    "6880dd3a38ecce001a8077aa": "Veg Meals - MONONITES (8TH Floor)",
+    "6880e17c07a321001a92f4a3": "Veg Live - MONONITES (8TH Floor)",
+    "689446b33bf1e0001a2b4310": "Go Meal (Non-Veg- Gokulam Park (8thFloor)"
+  },
+  "foodcourt_id_to_rest_id": {
+    "fc1": [
+      "rest1"
+    ],
+    "5f338dce8f277f4c2f4ac99f": [
+      "64535d907b196c00173b9087",
+      "64633e15e096c7001bf6ab32"
+    ],
+    "61862d3cc680d0688d9d3139": [
+      "61a6181a15bc1b50911379b8",
+      "6281eb08e5062e7fdd61a628",
+      "6787888768109c001385214b"
+    ],
+    "628f0b429f179d6efab94aa1": [
+      "67dd3e7ae70f5d0013ae1b0d"
+    ],
+    "63245d4de5aff648ca6109f0": [
+      "687894244fc611001a413d5c"
+    ],
+    "651ba1552d0b1d001b6c2e53": [
+      "68b699ed1bc7b7001aa1bdcf"
+    ],
+    "65b48ebd8d7d8f001be02f79": [
+      "65b491f70b4593001c7abcab",
+      "678f6cfcf8cc1b0013aae888",
+      "6815ab5b1a9ebe001ac189d6"
+    ],
+    "62b976e8a94ae70e02f47540": [
+      "68bbc6666671bc001ac2aff6"
+    ],
+    "66fb796c232d1500137baf13": [
+      "66fb953b4b79fd00134dd9e7",
+      "67595f3ca3c638001ab39b32"
+    ],
+    "633ac3e6f502b233052bd11f": [
+      "66655b0a202594001a75bcb1"
+    ],
+    "62122f42e9692355fc21cd37": [
+      "662250be19a7b6001ac4a8ac",
+      "6884a4660a2413001abcfeac"
+    ],
+    "655b3bdca4a02d001bcb78c3": [
+      "674084877dabfe001a8961ff",
+      "6765151f0724f300133fcfd4"
+    ],
+    "66751c8e3f015e001b2ed8b4": [
+      "6675401b27db94001a09b686",
+      "667560c488e8060019c784dd",
+      "67931970bc4818001334919d"
+    ],
+    "64deefcd895a9b001b1517a9": [
+      "63f49b896c60ed001aa08849",
+      "64df04908a0816001b300ca3"
+    ],
+    "6344e94b2db92732f3849cd4": [
+      "6344eed430ea5e3b5b617c5b",
+      "642a5a3abe27fc00173ac498"
+    ],
+    "620c8839d1702023497f3e64": [
+      "67b98d63ee768c001bcd986f",
+      "684e6fc18fe8f6001acff516",
+      "684fbf3dab3146001aa7031d",
+      "685b978115eb22001361590a"
+    ],
+    "621243047b7da3595490b804": [
+      "64e9c3567b984a00173a752d",
+      "67d26849fc2b44001ae6a817",
+      "67dd3dcb1c72b600197f1168"
+    ],
+    "5f3652cde091b809e2467d96": [
+      "6004167c1595960a72f31707",
+      "60599bd4b6dfef46f7241fef",
+      "6296dc1c8eeb0973341fc168",
+      "629b32fde44c8e62a76400f7"
+    ],
+    "618607cac665f41f98e72227": [
+      "61866983cbd33c2fa05aa2bb",
+      "638458e1915f54780b60c644"
+    ],
+    "64e33cca77a4b10017691075": [
+      "6397f84ed6a6982bfd8544f7",
+      "64defbea1cf0c4001728c0aa"
+    ],
+    "61529bb6364f2332c0fe8b1c": [
+      "663a126b5ea697001a21c0b2",
+      "675c1bfe7dabfe001a89a643"
+    ],
+    "66ffbf790724f300133f7c22": [
+      "684960b19b9a87001a77b8be"
+    ],
+    "66751bbe191e5a001af454d4": [
+      "66eab36ca2fa79001337411e"
+    ],
+    "6051d1f64ec6952ca5b45dba": [
+      "6053268e4ec6952ca5b46330",
+      "626f96886ea9037357d4496d",
+      "6376054fc09df47d4015b813"
+    ],
+    "60f172e2d1b6e328e744cf65": [
+      "675c1f7effb223001aad0e6a",
+      "67a1ccc868109c00138558a9",
+      "67a4e64aa334d00013a10be7",
+      "6881e7a47266d6001957aba9"
+    ],
+    "667da1a6b159bc001a9160b6": [
+      "667e4ff17bd01f001a6ec74e",
+      "66ab376ee522090013648938"
+    ],
+    "63245df1f909bf484ba32e5f": [
+      "687895f2fc72bd001be3942a"
+    ],
+    "63d74931822179001b3c8320": [
+      "6482d8614f5bd6001ba34682",
+      "66e3f26496ec49001a8e042a",
+      "680a24fab8772b001a09a05d"
+    ],
+    "62720dcd1410b643ccc5eaf0": [
+      "630c2f4b1d03704a4b9d5774",
+      "64a4439f929d03001b232c79",
+      "667d3aa4f9b003001a0a3825",
+      "66b48466824872001381c753",
+      "66e3f3ef439ddc001aa23ae2",
+      "68baf395228b96001a58ef4a"
+    ],
+    "6272117f6ea9037357d4559e": [
+      "66c2f662f616ee0013485ce4",
+      "68550c3a9dd89a001a32a7e5"
+    ],
+    "61e39f4b2acc405ba5c12202": [
+      "61e3a3cc77eb426ff13294b8",
+      "6281f1916d5a3f5e1dbdacc6",
+      "652f91a6feb690001008df55",
+      "667da2f5236e16001a7a4a60",
+      "684a855ebd30fd001a1bd0a1"
+    ],
+    "61860f8c2d415a4a5c52e822": [
+      "677f7350cceeca001339c24a",
+      "67a4bb46f8cc1b0013ab12a8",
+      "67a4e075c962240014f7edc8"
+    ],
+    "63469408bcf1a078aa63687c": [
+      "6346b2651b3f3d42ec4f7eb5",
+      "663b130d27bf180013bf1abf"
+    ],
+    "6368b12ed2915c10f4b68571": [
+      "6880dd3a38ecce001a8077aa",
+      "6880e17c07a321001a92f4a3",
+      "689446b33bf1e0001a2b4310"
+    ]
+  },
+  "restaurant_id_to_foodcourt_id": {
+    "rest1": "fc1",
+    "64535d907b196c00173b9087": "5f338dce8f277f4c2f4ac99f",
+    "61a6181a15bc1b50911379b8": "61862d3cc680d0688d9d3139",
+    "6281eb08e5062e7fdd61a628": "61862d3cc680d0688d9d3139",
+    "6787888768109c001385214b": "61862d3cc680d0688d9d3139",
+    "67dd3e7ae70f5d0013ae1b0d": "628f0b429f179d6efab94aa1",
+    "687894244fc611001a413d5c": "63245d4de5aff648ca6109f0",
+    "68b699ed1bc7b7001aa1bdcf": "651ba1552d0b1d001b6c2e53",
+    "65b491f70b4593001c7abcab": "65b48ebd8d7d8f001be02f79",
+    "678f6cfcf8cc1b0013aae888": "65b48ebd8d7d8f001be02f79",
+    "6815ab5b1a9ebe001ac189d6": "65b48ebd8d7d8f001be02f79",
+    "68bbc6666671bc001ac2aff6": "62b976e8a94ae70e02f47540",
+    "66fb953b4b79fd00134dd9e7": "66fb796c232d1500137baf13",
+    "67595f3ca3c638001ab39b32": "66fb796c232d1500137baf13",
+    "66655b0a202594001a75bcb1": "633ac3e6f502b233052bd11f",
+    "662250be19a7b6001ac4a8ac": "62122f42e9692355fc21cd37",
+    "6884a4660a2413001abcfeac": "62122f42e9692355fc21cd37",
+    "674084877dabfe001a8961ff": "655b3bdca4a02d001bcb78c3",
+    "6765151f0724f300133fcfd4": "655b3bdca4a02d001bcb78c3",
+    "6675401b27db94001a09b686": "66751c8e3f015e001b2ed8b4",
+    "667560c488e8060019c784dd": "66751c8e3f015e001b2ed8b4",
+    "67931970bc4818001334919d": "66751c8e3f015e001b2ed8b4",
+    "63f49b896c60ed001aa08849": "64deefcd895a9b001b1517a9",
+    "64df04908a0816001b300ca3": "64deefcd895a9b001b1517a9",
+    "6344eed430ea5e3b5b617c5b": "6344e94b2db92732f3849cd4",
+    "642a5a3abe27fc00173ac498": "6344e94b2db92732f3849cd4",
+    "64633e15e096c7001bf6ab32": "5f338dce8f277f4c2f4ac99f",
+    "67b98d63ee768c001bcd986f": "620c8839d1702023497f3e64",
+    "684e6fc18fe8f6001acff516": "620c8839d1702023497f3e64",
+    "684fbf3dab3146001aa7031d": "620c8839d1702023497f3e64",
+    "685b978115eb22001361590a": "620c8839d1702023497f3e64",
+    "64e9c3567b984a00173a752d": "621243047b7da3595490b804",
+    "67d26849fc2b44001ae6a817": "621243047b7da3595490b804",
+    "67dd3dcb1c72b600197f1168": "621243047b7da3595490b804",
+    "6004167c1595960a72f31707": "5f3652cde091b809e2467d96",
+    "60599bd4b6dfef46f7241fef": "5f3652cde091b809e2467d96",
+    "6296dc1c8eeb0973341fc168": "5f3652cde091b809e2467d96",
+    "629b32fde44c8e62a76400f7": "5f3652cde091b809e2467d96",
+    "61866983cbd33c2fa05aa2bb": "618607cac665f41f98e72227",
+    "638458e1915f54780b60c644": "618607cac665f41f98e72227",
+    "6397f84ed6a6982bfd8544f7": "64e33cca77a4b10017691075",
+    "64defbea1cf0c4001728c0aa": "64e33cca77a4b10017691075",
+    "663a126b5ea697001a21c0b2": "61529bb6364f2332c0fe8b1c",
+    "675c1bfe7dabfe001a89a643": "61529bb6364f2332c0fe8b1c",
+    "684960b19b9a87001a77b8be": "66ffbf790724f300133f7c22",
+    "66eab36ca2fa79001337411e": "66751bbe191e5a001af454d4",
+    "6053268e4ec6952ca5b46330": "6051d1f64ec6952ca5b45dba",
+    "626f96886ea9037357d4496d": "6051d1f64ec6952ca5b45dba",
+    "6376054fc09df47d4015b813": "6051d1f64ec6952ca5b45dba",
+    "675c1f7effb223001aad0e6a": "60f172e2d1b6e328e744cf65",
+    "67a1ccc868109c00138558a9": "60f172e2d1b6e328e744cf65",
+    "67a4e64aa334d00013a10be7": "60f172e2d1b6e328e744cf65",
+    "6881e7a47266d6001957aba9": "60f172e2d1b6e328e744cf65",
+    "667e4ff17bd01f001a6ec74e": "667da1a6b159bc001a9160b6",
+    "66ab376ee522090013648938": "667da1a6b159bc001a9160b6",
+    "687895f2fc72bd001be3942a": "63245df1f909bf484ba32e5f",
+    "6482d8614f5bd6001ba34682": "63d74931822179001b3c8320",
+    "66e3f26496ec49001a8e042a": "63d74931822179001b3c8320",
+    "680a24fab8772b001a09a05d": "63d74931822179001b3c8320",
+    "630c2f4b1d03704a4b9d5774": "62720dcd1410b643ccc5eaf0",
+    "64a4439f929d03001b232c79": "62720dcd1410b643ccc5eaf0",
+    "667d3aa4f9b003001a0a3825": "62720dcd1410b643ccc5eaf0",
+    "66b48466824872001381c753": "62720dcd1410b643ccc5eaf0",
+    "66e3f3ef439ddc001aa23ae2": "62720dcd1410b643ccc5eaf0",
+    "68baf395228b96001a58ef4a": "62720dcd1410b643ccc5eaf0",
+    "66c2f662f616ee0013485ce4": "6272117f6ea9037357d4559e",
+    "68550c3a9dd89a001a32a7e5": "6272117f6ea9037357d4559e",
+    "61e3a3cc77eb426ff13294b8": "61e39f4b2acc405ba5c12202",
+    "6281f1916d5a3f5e1dbdacc6": "61e39f4b2acc405ba5c12202",
+    "652f91a6feb690001008df55": "61e39f4b2acc405ba5c12202",
+    "667da2f5236e16001a7a4a60": "61e39f4b2acc405ba5c12202",
+    "684a855ebd30fd001a1bd0a1": "61e39f4b2acc405ba5c12202",
+    "677f7350cceeca001339c24a": "61860f8c2d415a4a5c52e822",
+    "67a4bb46f8cc1b0013ab12a8": "61860f8c2d415a4a5c52e822",
+    "67a4e075c962240014f7edc8": "61860f8c2d415a4a5c52e822",
+    "6346b2651b3f3d42ec4f7eb5": "63469408bcf1a078aa63687c",
+    "663b130d27bf180013bf1abf": "63469408bcf1a078aa63687c",
+    "6880dd3a38ecce001a8077aa": "6368b12ed2915c10f4b68571",
+    "6880e17c07a321001a92f4a3": "6368b12ed2915c10f4b68571",
+    "689446b33bf1e0001a2b4310": "6368b12ed2915c10f4b68571"
+  },
+  "restaurant_id_to_item": {
+    "rest1": {
+      "item_id_to_name": {
+        "item1": "Item 1"
+      },
+      "item_name_to_id": {
+        "Item 1": "item1"
+      }
+    },
+    "64535d907b196c00173b9087": {
+      "item_id_to_name": {
+        "68ce616294918d00134724cb": "Support Staff Meal (Breakfast And Lunch)",
+        "68ce616394918d00134724d7": "South Indian Veg Thali With Sweet",
+        "68ce616394918d00134724ee": "North Indian Veg Thali With Sweet",
+        "68ce616494918d0013472517": "Veg Combo",
+        "68ce616494918d0013472541": "Mix Veg Curry Chawal Combo",
+        "68ce616494918d001347254d": "Paneer Rice Combo",
+        "68ce616494918d001347254e": "Paneer Roti Combo",
+        "68ce616494918d001347254f": "Veg Meal",
+        "68ce616394918d0013472507": "Paneer Roti Combo"
+      },
+      "item_name_to_id": {
+        "Support Staff Meal (Breakfast And Lunch)": "68ce616294918d00134724cb",
+        "South Indian Veg Thali With Sweet": "68ce616394918d00134724d7",
+        "North Indian Veg Thali With Sweet": "68ce616394918d00134724ee",
+        "Veg Combo": "68ce616494918d0013472517",
+        "Mix Veg Curry Chawal Combo": "68ce616494918d0013472541",
+        "Paneer Rice Combo": "68ce616494918d001347254d",
+        "Paneer Roti Combo": "68ce616494918d001347254e",
+        "Veg Meal": "68ce616494918d001347254f"
+      }
+    },
+    "61a6181a15bc1b50911379b8": {
+      "item_id_to_name": {
+        "68ac0dd65c599d001bc9bbe8": "Full Meal without Sweet",
+        "68ac0dd65c599d001bc9bbea": "Non Veg Combo",
+        "68ac0dd65c599d001bc9bbed": "Chicken Meal",
+        "68ac0dd65c599d001bc9bbf2": "Egg Meal",
+        "68ac0dd65c599d001bc9bbf3": "Veg Combo Meal - 1",
+        "68ac0dd65c599d001bc9bbf7": "Full Meal with Sweets",
+        "68ac0dd65c599d001bc9bbf8": "Mutton Meal",
+        "68ac0dd65c599d001bc9bbfc": "Veg Combo",
+        "68ac0dd65c599d001bc9bbfd": "Veg Biryani",
+        "68ac0dd65c599d001bc9bbfe": "All Paneer Combo Meal Items",
+        "68d27927b458050013121dc8": " Navratri Special Meal 1 ",
+        "68ac0dd65c599d001bc9bbe9": "Chicken Meal"
+      },
+      "item_name_to_id": {
+        "Full Meal without Sweet": "68ac0dd65c599d001bc9bbe8",
+        "Non Veg Combo": "68ac0dd65c599d001bc9bbea",
+        "Chicken Meal": "68ac0dd65c599d001bc9bbe9",
+        "Egg Meal": "68ac0dd65c599d001bc9bbf2",
+        "Veg Combo Meal - 1": "68ac0dd65c599d001bc9bbf3",
+        "Full Meal with Sweets": "68ac0dd65c599d001bc9bbf7",
+        "Mutton Meal": "68ac0dd65c599d001bc9bbf8",
+        "Veg Combo": "68ac0dd65c599d001bc9bbfc",
+        "Veg Biryani": "68ac0dd65c599d001bc9bbfd",
+        "All Paneer Combo Meal Items": "68ac0dd65c599d001bc9bbfe",
+        " Navratri Special Meal 1 ": "68d27927b458050013121dc8"
+      }
+    },
+    "6281eb08e5062e7fdd61a628": {
+      "item_id_to_name": {
+        "64f2f1ca76868b00110d2afa": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2b04": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2b07": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2b08": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2b0e": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2b10": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2b15": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2b17": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2b18": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2b19": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2b1f": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2b21": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2b22": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2b5a": "Chicken curry with plan paratha",
+        "64f2f1ca76868b00110d2bc7": "Veg Combo Meal ",
+        "64f2f1ca76868b00110d2bc8": "Veg Combo Meal ",
+        "67a74b5bc962240014f7f07b": "Veg Combo Meal",
+        "67a74b5bc962240014f7f07c": "Veg Combo Meal",
+        "67a74b5bc962240014f7f07d": "Veg Combo Meal",
+        "67a74b5bc962240014f7f07e": "Veg Combo Meal",
+        "67a74b5bc962240014f7f080": "Veg Combo Meal",
+        "67a74b5bc962240014f7f089": "Veg Combo Meal",
+        "67a74b5bc962240014f7f08d": "Veg Combo Meal",
+        "67a74b5bc962240014f7f096": "Veg Combo Meal",
+        "67a74b5bc962240014f7f098": "Veg Combo Meal",
+        "67a74b5bc962240014f7f099": "Veg Combo Meal",
+        "68ac15ef88b480001a8f0879": "Veg Combo Meal",
+        "68ac15ef88b480001a8f087a": "Chicken curry with plan paratha",
+        "68ac15ef88b480001a8f0895": "Veg Combo Meal",
+        "68ac15ef88b480001a8f08b3": "Veg Combo Meal",
+        "68ac15ef88b480001a8f08b6": "Veg Combo Meal",
+        "68ce891834926e001337c6e6": "Vada with Sambar",
+        "68ce891834926e001337c6e7": "Veg Combo Meal",
+        "68ce891834926e001337c6ea": "Egg Bhurji with Plain Paratha",
+        "68ce891834926e001337c6f1": "Upma with Chutney",
+        "68ce891834926e001337c6f3": "Butter Masala Dosa with Sambar and Chutney",
+        "68ce891834926e001337c6f6": "Chicken Biryani",
+        "68ce891834926e001337c700": "Veg Fried Rice with Paneer Chilli",
+        "68ce891834926e001337c715": "Paneer Masala Dosa with Sambar and Chutney",
+        "68ce891834926e001337c71a": "Masala Dosa with Sambar and Chutney",
+        "68ce891834926e001337c734": "Veg Combo Meal ",
+        "68ce891834926e001337c740": "Mix Vegetable Dosa with Sambar and Chutney",
+        "68ce891834926e001337c746": "All Paneer Combo Meal Items",
+        "68ce891934926e001337c7c8": "Gobhi Paratha With Pickle",
+        "68ce891934926e001337c7ce": "Onion Paratha With Pickle",
+        "68ce891934926e001337c7d5": "Aloo Paratha With Pickle",
+        "68ce891934926e001337c7d6": "Paneer Paratha With Pickle",
+        "68d0dc662614630013a7b096": "Meal Combo 1",
+        "68d0dca852c2470013f35dac": "Meal Combo 2"
+      },
+      "item_name_to_id": {
+        "Veg Combo Meal ": "68ce891834926e001337c734",
+        "Chicken curry with plan paratha": "68ac15ef88b480001a8f087a",
+        "Veg Combo Meal": "68ce891834926e001337c734",
+        "Vada with Sambar": "68ce891834926e001337c6e6",
+        "Egg Bhurji with Plain Paratha": "68ce891834926e001337c6ea",
+        "Upma with Chutney": "68ce891834926e001337c6f1",
+        "Butter Masala Dosa with Sambar and Chutney": "68ce891834926e001337c6f3",
+        "Chicken Biryani": "68ce891834926e001337c6f6",
+        "Veg Fried Rice with Paneer Chilli": "68ce891834926e001337c700",
+        "Paneer Masala Dosa with Sambar and Chutney": "68ce891834926e001337c715",
+        "Masala Dosa with Sambar and Chutney": "68ce891834926e001337c71a",
+        "Mix Vegetable Dosa with Sambar and Chutney": "68ce891834926e001337c740",
+        "All Paneer Combo Meal Items": "68ce891834926e001337c746",
+        "Gobhi Paratha With Pickle": "68ce891934926e001337c7c8",
+        "Onion Paratha With Pickle": "68ce891934926e001337c7ce",
+        "Aloo Paratha With Pickle": "68ce891934926e001337c7d5",
+        "Paneer Paratha With Pickle": "68ce891934926e001337c7d6",
+        "Meal Combo 1": "68d0dc662614630013a7b096",
+        "Meal Combo 2": "68d0dca852c2470013f35dac"
+      }
+    },
+    "6787888768109c001385214b": {
+      "item_id_to_name": {
+        "68cebaa9b06901001382a85d": "Veg Manchurian with Rice Bowl",
+        "68cebaaab06901001382a87b": "Veg Wrap with Noodles",
+        "68cebaaab06901001382a880": "Veg Manchurian with Noodles",
+        "68cebaaab06901001382a88b": "Chilli Paneer with Rice Bowl",
+        "68cebaaab06901001382a896": "Chilli Paneer with Noodles",
+        "68cebaabb06901001382a8b1": "Masala Dosa (Without Ghee)",
+        "68cebaabb06901001382a8bb": "Plain Uttapam (Without Ghee)",
+        "68cebaabb06901001382a8bc": "Upma (Without Ghee)",
+        "68cebaabb06901001382a8bd": "Plain Dosa (Without Ghee)",
+        "68cebaabb06901001382a8c8": "Curd Rice (With Pomegranate Dressing)",
+        "68cebaabb06901001382a8d3": "Veg Uttapam (Without Ghee)"
+      },
+      "item_name_to_id": {
+        "Veg Manchurian with Rice Bowl": "68cebaa9b06901001382a85d",
+        "Veg Wrap with Noodles": "68cebaaab06901001382a87b",
+        "Veg Manchurian with Noodles": "68cebaaab06901001382a880",
+        "Chilli Paneer with Rice Bowl": "68cebaaab06901001382a88b",
+        "Chilli Paneer with Noodles": "68cebaaab06901001382a896",
+        "Masala Dosa (Without Ghee)": "68cebaabb06901001382a8b1",
+        "Plain Uttapam (Without Ghee)": "68cebaabb06901001382a8bb",
+        "Upma (Without Ghee)": "68cebaabb06901001382a8bc",
+        "Plain Dosa (Without Ghee)": "68cebaabb06901001382a8bd",
+        "Curd Rice (With Pomegranate Dressing)": "68cebaabb06901001382a8c8",
+        "Veg Uttapam (Without Ghee)": "68cebaabb06901001382a8d3"
+      }
+    },
+    "67dd3e7ae70f5d0013ae1b0d": {
+      "item_id_to_name": {
+        "67e3dcc07d3065001a24a42d": "Veg Thali",
+        "67e3dd1be5d450001ad3d866": "Premium Thali",
+        "6811cd80b8772b001a09a627": "Veg Combo",
+        "6811cda138ee93001a34d9ec": "Paneer Combo"
+      },
+      "item_name_to_id": {
+        "Veg Thali": "67e3dcc07d3065001a24a42d",
+        "Premium Thali": "67e3dd1be5d450001ad3d866",
+        "Veg Combo": "6811cd80b8772b001a09a627",
+        "Paneer Combo": "6811cda138ee93001a34d9ec"
+      }
+    },
+    "687894244fc611001a413d5c": {
+      "item_id_to_name": {
+        "6878e6313c8d24001ace642e": "Veg Meal",
+        "6878e6313c8d24001ace642f": "Veg Biryani",
+        "6878e6313c8d24001ace6434": "Idly Vada Combo",
+        "6878e6313c8d24001ace6439": "Non - Veg Thali(Chicken Curry)",
+        "6878e6313c8d24001ace6443": "Veg Thali",
+        "6878e6313c8d24001ace6444": "Chicken Biryani",
+        "6878e6313c8d24001ace6455": "Meal Combo",
+        "68ac6bc2c203da001a888717": "Veg Chinese Combo",
+        "68ac6bf25c599d001bc9c35f": "Non-Veg Chinese Combo\t"
+      },
+      "item_name_to_id": {
+        "Veg Meal": "6878e6313c8d24001ace642e",
+        "Veg Biryani": "6878e6313c8d24001ace642f",
+        "Idly Vada Combo": "6878e6313c8d24001ace6434",
+        "Non - Veg Thali(Chicken Curry)": "6878e6313c8d24001ace6439",
+        "Veg Thali": "6878e6313c8d24001ace6443",
+        "Chicken Biryani": "6878e6313c8d24001ace6444",
+        "Meal Combo": "6878e6313c8d24001ace6455",
+        "Veg Chinese Combo": "68ac6bc2c203da001a888717",
+        "Non-Veg Chinese Combo\t": "68ac6bf25c599d001bc9c35f"
+      }
+    },
+    "68b699ed1bc7b7001aa1bdcf": {
+      "item_id_to_name": {
+        "68b6bdc4f3e63d001a78b988": "Non Veg Meal",
+        "68b6bdc5f3e63d001a78b99c": "Idli with Sambar",
+        "68b6bdc5f3e63d001a78b9b7": "Veg Meal",
+        "68b6bdc5f3e63d001a78b9dc": "Veg Biryani",
+        "68b6bdc5f3e63d001a78b9f4": "Chicken Biryani",
+        "68b6bdc5f3e63d001a78b9fb": "Omelette with 2 Pav",
+        "68b6bdc5f3e63d001a78ba00": "Egg Biryani"
+      },
+      "item_name_to_id": {
+        "Non Veg Meal": "68b6bdc4f3e63d001a78b988",
+        "Idli with Sambar": "68b6bdc5f3e63d001a78b99c",
+        "Veg Meal": "68b6bdc5f3e63d001a78b9b7",
+        "Veg Biryani": "68b6bdc5f3e63d001a78b9dc",
+        "Chicken Biryani": "68b6bdc5f3e63d001a78b9f4",
+        "Omelette with 2 Pav": "68b6bdc5f3e63d001a78b9fb",
+        "Egg Biryani": "68b6bdc5f3e63d001a78ba00"
+      }
+    },
+    "65b491f70b4593001c7abcab": {
+      "item_id_to_name": {
+        "65b71e28f0aef70017a248bd": "Aloo Bhaji with Puri",
+        "65b72162364d88001b2b4f1c": "Poha With Vegetable",
+        "65dd60b66cbe240011d63f8a": "Stuffed Chilla Roll with Mint Chutney",
+        "661e5d36267412001ac87557": "Aloo Bhaji with Kachori",
+        "661e5d90fd61cf001a80fc57": "Vada with Sabz Sambar",
+        "661e5dcf5948c6001a2281d7": "Chole with Samosa",
+        "662a0edc09779d0013c9a730": "Chole With Kulcha",
+        "662a0f12535a700014a81f71": "Matar With Kulcha",
+        "662a0f4a09779d0013c9a733": "Stuffed Paratha With Pickle and Curd",
+        "662a0f8609779d0013c9a736": "Idli With Sambar",
+        "6633a95f27bf180013bf1634": "Paneer Paratha with Curd and Pickle",
+        "665d31b60a7419001330a793": "Poori with Chole",
+        "665d31d6e11fec0013e23fd6": "Boiled Egg with Chutney",
+        "668bc097f9b003001a0a4828": "Veg Meals -1",
+        "668bc0b3b159bc001a917049": "Non Veg Meals-1",
+        "668bc0ecf9b003001a0a482b": "Veg Meals -2",
+        "668bc118aa14d4001a9ce517": "Non Veg Meals -2",
+        "668bc157295e73001a44275a": "Veg Meals- 3",
+        "668bc17c08d7de001af99287": "Non Veg Meals -3"
+      },
+      "item_name_to_id": {
+        "Aloo Bhaji with Puri": "65b71e28f0aef70017a248bd",
+        "Poha With Vegetable": "65b72162364d88001b2b4f1c",
+        "Stuffed Chilla Roll with Mint Chutney": "65dd60b66cbe240011d63f8a",
+        "Aloo Bhaji with Kachori": "661e5d36267412001ac87557",
+        "Vada with Sabz Sambar": "661e5d90fd61cf001a80fc57",
+        "Chole with Samosa": "661e5dcf5948c6001a2281d7",
+        "Chole With Kulcha": "662a0edc09779d0013c9a730",
+        "Matar With Kulcha": "662a0f12535a700014a81f71",
+        "Stuffed Paratha With Pickle and Curd": "662a0f4a09779d0013c9a733",
+        "Idli With Sambar": "662a0f8609779d0013c9a736",
+        "Paneer Paratha with Curd and Pickle": "6633a95f27bf180013bf1634",
+        "Poori with Chole": "665d31b60a7419001330a793",
+        "Boiled Egg with Chutney": "665d31d6e11fec0013e23fd6",
+        "Veg Meals -1": "668bc097f9b003001a0a4828",
+        "Non Veg Meals-1": "668bc0b3b159bc001a917049",
+        "Veg Meals -2": "668bc0ecf9b003001a0a482b",
+        "Non Veg Meals -2": "668bc118aa14d4001a9ce517",
+        "Veg Meals- 3": "668bc157295e73001a44275a",
+        "Non Veg Meals -3": "668bc17c08d7de001af99287"
+      }
+    },
+    "678f6cfcf8cc1b0013aae888": {
+      "item_id_to_name": {
+        "67938ab668109c0013852f76": "Vada Pav with Chutney",
+        "67938ab768109c0013852fe4": "Ulundu Vadai With Sambar and Chutney",
+        "67938ab768109c0013852ffd": "Ven Pongal with Chutney",
+        "67938ab868109c001385301b": "Rawther Dum Biryani with Raita",
+        "67938ab868109c001385301c": "Thiru Molaga Curd Rice with Pickle",
+        "67938ab868109c001385301d": "Lemon Rice with Raita and Pappad",
+        "67938ab868109c0013853026": "Kal Dosa Combo",
+        "67938ab868109c0013853028": "Rasam Rice with Poriyal and Pappad",
+        "67938ab868109c0013853031": "Idli Vada Combo",
+        "67938ab868109c0013853032": "Sambar Rice with Poriyal and Pappad",
+        "67938ab868109c001385303e": "Tamarind Rice With Raita and Pappad",
+        "67938ab868109c0013853048": "Bisi Bele Bath with Kara Boondi",
+        "67938aba68109c00138531a8": "Rawther Dum Biryani with Raita (Chicken)",
+        "67938aba68109c00138531a9": "Kal Dosa Combo (Chicken)",
+        "67938aba68109c00138531ab": "Kal Dosa Combo (Egg)",
+        "68d0e5497739c7001420b3b9": "Meal Combo 1",
+        "68d0e8b079844c0012169f48": "Meal Combo 2"
+      },
+      "item_name_to_id": {
+        "Vada Pav with Chutney": "67938ab668109c0013852f76",
+        "Ulundu Vadai With Sambar and Chutney": "67938ab768109c0013852fe4",
+        "Ven Pongal with Chutney": "67938ab768109c0013852ffd",
+        "Rawther Dum Biryani with Raita": "67938ab868109c001385301b",
+        "Thiru Molaga Curd Rice with Pickle": "67938ab868109c001385301c",
+        "Lemon Rice with Raita and Pappad": "67938ab868109c001385301d",
+        "Kal Dosa Combo": "67938ab868109c0013853026",
+        "Rasam Rice with Poriyal and Pappad": "67938ab868109c0013853028",
+        "Idli Vada Combo": "67938ab868109c0013853031",
+        "Sambar Rice with Poriyal and Pappad": "67938ab868109c0013853032",
+        "Tamarind Rice With Raita and Pappad": "67938ab868109c001385303e",
+        "Bisi Bele Bath with Kara Boondi": "67938ab868109c0013853048",
+        "Rawther Dum Biryani with Raita (Chicken)": "67938aba68109c00138531a8",
+        "Kal Dosa Combo (Chicken)": "67938aba68109c00138531a9",
+        "Kal Dosa Combo (Egg)": "67938aba68109c00138531ab",
+        "Meal Combo 1": "68d0e5497739c7001420b3b9",
+        "Meal Combo 2": "68d0e8b079844c0012169f48"
+      }
+    },
+    "6815ab5b1a9ebe001ac189d6": {
+      "item_id_to_name": {
+        "6819af9066b30f001a21b5f4": "Bun Maska With Butter"
+      },
+      "item_name_to_id": {
+        "Bun Maska With Butter": "6819af9066b30f001a21b5f4"
+      }
+    },
+    "68bbc6666671bc001ac2aff6": {
+      "item_id_to_name": {
+        "68bbe970228b96001a58efe0": "Plain Rice with Chapati and Dal",
+        "68bbe970228b96001a58efe1": "Curry with Pulao",
+        "68bbe970228b96001a58efe2": "North Indian Veg Thali With Sweet",
+        "68bbe970228b96001a58eff8": "Rajma Chawal with Salad",
+        "68bbe970228b96001a58f00f": "Veg Pulao with Paneer Gravy and Salad"
+      },
+      "item_name_to_id": {
+        "Plain Rice with Chapati and Dal": "68bbe970228b96001a58efe0",
+        "Curry with Pulao": "68bbe970228b96001a58efe1",
+        "North Indian Veg Thali With Sweet": "68bbe970228b96001a58efe2",
+        "Rajma Chawal with Salad": "68bbe970228b96001a58eff8",
+        "Veg Pulao with Paneer Gravy and Salad": "68bbe970228b96001a58f00f"
+      }
+    },
+    "66fb953b4b79fd00134dd9e7": {
+      "item_id_to_name": {
+        "66ffcd714b79fd00134ddfd3": "Idli with Sambar and Chutney",
+        "66ffcd714b79fd00134ddfe2": "Veg Pongal With Chutney",
+        "66ffcd714b79fd00134ddfe4": "Ulundu Vadai with Sambar and Chutney",
+        "66ffcd724b79fd00134ddff7": "Sambar Rice with Poriyal and Papad",
+        "66ffcd724b79fd00134de003": "Malabar Paratha with Veg Curry",
+        "66ffcd724b79fd00134de004": "Rawther Dum Biryani with Raita",
+        "66ffcd724b79fd00134de014": "Rawther Chicken Dum Biryani with Raita",
+        "66ffcd724b79fd00134de015": "Tamarind Rice with Raita and Pappad",
+        "66ffcd724b79fd00134de016": "Lemon Rice with Raita and Papad",
+        "66ffcd724b79fd00134de021": "Malabar Paratha with Chicken Curry",
+        "66ffcd724b79fd00134de025": "Rasam Rice with Poriyal and Papad",
+        "66ffcd724b79fd00134de02e": "Kal Dosa Combo with Veg Curry",
+        "66ffcd724b79fd00134de030": "Kal Dosa Combo with Chicken Curry",
+        "66ffcd724b79fd00134de032": "Bisi Bele Bath with Kara Boondi",
+        "66ffcd724b79fd00134de033": "Thiru Molaga Curd Rice with Pickle",
+        "67455fd5d140c800134b7ff4": "Idli Vada Combo",
+        "6745602610d357001a93ddc5": "Upma ,Vada Combo",
+        "68cffcb7b45805001311fa18": "Meal Combo 1..!!",
+        "68cffd1bb45805001311fa1b": "Meal Combo 2..!!"
+      },
+      "item_name_to_id": {
+        "Idli with Sambar and Chutney": "66ffcd714b79fd00134ddfd3",
+        "Veg Pongal With Chutney": "66ffcd714b79fd00134ddfe2",
+        "Ulundu Vadai with Sambar and Chutney": "66ffcd714b79fd00134ddfe4",
+        "Sambar Rice with Poriyal and Papad": "66ffcd724b79fd00134ddff7",
+        "Malabar Paratha with Veg Curry": "66ffcd724b79fd00134de003",
+        "Rawther Dum Biryani with Raita": "66ffcd724b79fd00134de004",
+        "Rawther Chicken Dum Biryani with Raita": "66ffcd724b79fd00134de014",
+        "Tamarind Rice with Raita and Pappad": "66ffcd724b79fd00134de015",
+        "Lemon Rice with Raita and Papad": "66ffcd724b79fd00134de016",
+        "Malabar Paratha with Chicken Curry": "66ffcd724b79fd00134de021",
+        "Rasam Rice with Poriyal and Papad": "66ffcd724b79fd00134de025",
+        "Kal Dosa Combo with Veg Curry": "66ffcd724b79fd00134de02e",
+        "Kal Dosa Combo with Chicken Curry": "66ffcd724b79fd00134de030",
+        "Bisi Bele Bath with Kara Boondi": "66ffcd724b79fd00134de032",
+        "Thiru Molaga Curd Rice with Pickle": "66ffcd724b79fd00134de033",
+        "Idli Vada Combo": "67455fd5d140c800134b7ff4",
+        "Upma ,Vada Combo": "6745602610d357001a93ddc5",
+        "Meal Combo 1..!!": "68cffcb7b45805001311fa18",
+        "Meal Combo 2..!!": "68cffd1bb45805001311fa1b"
+      }
+    },
+    "67595f3ca3c638001ab39b32": {
+      "item_id_to_name": {
+        "675fc1c2ffb223001aad107c": "Non - Veg Meal",
+        "675fc1c3ffb223001aad1090": "Veg Meal"
+      },
+      "item_name_to_id": {
+        "Non - Veg Meal": "675fc1c2ffb223001aad107c",
+        "Veg Meal": "675fc1c3ffb223001aad1090"
+      }
+    },
+    "66655b0a202594001a75bcb1": {
+      "item_id_to_name": {
+        "6665d18557d123001af6ffc8": "Veg Meal ",
+        "6665d1d8adca2b001aa3459e": "Non - Veg Meal",
+        "666839569dd565001ada9db9": "Dinner Meal",
+        "666839789dd565001ada9dbc": "Combo 1",
+        "666839a3202594001a75c182": "Combo 2"
+      },
+      "item_name_to_id": {
+        "Veg Meal ": "6665d18557d123001af6ffc8",
+        "Non - Veg Meal": "6665d1d8adca2b001aa3459e",
+        "Dinner Meal": "666839569dd565001ada9db9",
+        "Combo 1": "666839789dd565001ada9dbc",
+        "Combo 2": "666839a3202594001a75c182"
+      }
+    },
+    "662250be19a7b6001ac4a8ac": {
+      "item_id_to_name": {
+        "6688f4d8491431001a71aade": "Iced Roselle With Chia Seed",
+        "6688f4d8491431001a71aaee": "Iced Nannari With Chia Seed",
+        "6688f4d8491431001a71aafd": "Iced Blue Pea With Chia Seed"
+      },
+      "item_name_to_id": {
+        "Iced Roselle With Chia Seed": "6688f4d8491431001a71aade",
+        "Iced Nannari With Chia Seed": "6688f4d8491431001a71aaee",
+        "Iced Blue Pea With Chia Seed": "6688f4d8491431001a71aafd"
+      }
+    },
+    "6884a4660a2413001abcfeac": {
+      "item_id_to_name": {
+        "6884a757caa90c001a3e87cf": "Veg Biryani",
+        "6884a758caa90c001a3e87db": "Paneer Biryani",
+        "6884a758caa90c001a3e87df": "Mini Meals",
+        "6884a758caa90c001a3e87ef": "Diwali Special Meals",
+        "6884a758caa90c001a3e87f5": "Mushroom Biryani",
+        "6884a758caa90c001a3e87fa": "South Indian Meals",
+        "6884a758caa90c001a3e87ff": "Any Veg Biryani"
+      },
+      "item_name_to_id": {
+        "Veg Biryani": "6884a757caa90c001a3e87cf",
+        "Paneer Biryani": "6884a758caa90c001a3e87db",
+        "Mini Meals": "6884a758caa90c001a3e87df",
+        "Diwali Special Meals": "6884a758caa90c001a3e87ef",
+        "Mushroom Biryani": "6884a758caa90c001a3e87f5",
+        "South Indian Meals": "6884a758caa90c001a3e87fa",
+        "Any Veg Biryani": "6884a758caa90c001a3e87ff"
+      }
+    },
+    "674084877dabfe001a8961ff": {
+      "item_id_to_name": {
+        "68b284cd7a62f1001aac40b6": "Chapati With Veg Kurma",
+        "68b284cd7a62f1001aac40b7": "Veg Biryani",
+        "68b284ce7a62f1001aac40ec": "Mini Meals"
+      },
+      "item_name_to_id": {
+        "Chapati With Veg Kurma": "68b284cd7a62f1001aac40b6",
+        "Veg Biryani": "68b284cd7a62f1001aac40b7",
+        "Mini Meals": "68b284ce7a62f1001aac40ec"
+      }
+    },
+    "6765151f0724f300133fcfd4": {
+      "item_id_to_name": {
+        "68d19f2abdac96001304f390": "Chapathi With Chicken Curry",
+        "68d19f2abdac96001304f394": "Chapathi With Chicken Curry And Salad",
+        "68d19f2abdac96001304f395": "Chicken Biryani Without Egg"
+      },
+      "item_name_to_id": {
+        "Chapathi With Chicken Curry": "68d19f2abdac96001304f390",
+        "Chapathi With Chicken Curry And Salad": "68d19f2abdac96001304f394",
+        "Chicken Biryani Without Egg": "68d19f2abdac96001304f395"
+      }
+    },
+    "6675401b27db94001a09b686": {
+      "item_id_to_name": {
+        "687b7815f05a83001a94db40": "Flavored Rice with Chicken Curry & Salad",
+        "687b7815f05a83001a94db41": "Flavored Rice with Paneer Curry & Salad",
+        "687b7815f05a83001a94db48": "Parotta with Chicken Curry",
+        "687b7815f05a83001a94db49": "Parotta With Paneer Curry",
+        "687b7815f05a83001a94db4a": "Chapathi with Veg Curry",
+        "687b7815f05a83001a94db50": "Chapathi with Chicken Curry",
+        "687b7815f05a83001a94db51": "Parotta with Veg Curry",
+        "687b7815f05a83001a94db58": "Rice with Egg Curry",
+        "687b7815f05a83001a94db59": "Chapathi with Paneer Curry",
+        "687b7815f05a83001a94db5a": "Rice with Chicken Curry"
+      },
+      "item_name_to_id": {
+        "Flavored Rice with Chicken Curry & Salad": "687b7815f05a83001a94db40",
+        "Flavored Rice with Paneer Curry & Salad": "687b7815f05a83001a94db41",
+        "Parotta with Chicken Curry": "687b7815f05a83001a94db48",
+        "Parotta With Paneer Curry": "687b7815f05a83001a94db49",
+        "Chapathi with Veg Curry": "687b7815f05a83001a94db4a",
+        "Chapathi with Chicken Curry": "687b7815f05a83001a94db50",
+        "Parotta with Veg Curry": "687b7815f05a83001a94db51",
+        "Rice with Egg Curry": "687b7815f05a83001a94db58",
+        "Chapathi with Paneer Curry": "687b7815f05a83001a94db59",
+        "Rice with Chicken Curry": "687b7815f05a83001a94db5a"
+      }
+    },
+    "667560c488e8060019c784dd": {
+      "item_id_to_name": {
+        "66785afd29fbb3001a04514e": "Non Veg Thali without Sweet",
+        "66785afd29fbb3001a045152": "Non Veg Thali with Sweet",
+        "66785afd29fbb3001a045155": "Chicken Biryani",
+        "66785afd29fbb3001a04515c": "Egg Biryani"
+      },
+      "item_name_to_id": {
+        "Non Veg Thali without Sweet": "66785afd29fbb3001a04514e",
+        "Non Veg Thali with Sweet": "66785afd29fbb3001a045152",
+        "Chicken Biryani": "66785afd29fbb3001a045155",
+        "Egg Biryani": "66785afd29fbb3001a04515c"
+      }
+    },
+    "67931970bc4818001334919d": {
+      "item_id_to_name": {
+        "687b7c92fc72bd001be39668": "North Indian Veg Thali with Sweet",
+        "687b7c92fc72bd001be39669": "Veg Biryani",
+        "687b7c92fc72bd001be3966f": "South Indian Veg Thali without Sweet",
+        "687b7c92fc72bd001be39670": "Mini Thali",
+        "68ef929fe9c1930013304a03": "Special Thali"
+      },
+      "item_name_to_id": {
+        "North Indian Veg Thali with Sweet": "687b7c92fc72bd001be39668",
+        "Veg Biryani": "687b7c92fc72bd001be39669",
+        "South Indian Veg Thali without Sweet": "687b7c92fc72bd001be3966f",
+        "Mini Thali": "687b7c92fc72bd001be39670",
+        "Special Thali": "68ef929fe9c1930013304a03"
+      }
+    },
+    "63f49b896c60ed001aa08849": {
+      "item_id_to_name": {
+        "64f8029ce7034b001b9df494": "Non - Veg Meal",
+        "64f8029ce7034b001b9df49c": "Veg Meal",
+        "650461bdfa3e2f001a6bfeae": "Veg Meal",
+        "650461ed831d4a001bf5b2de": "Non - Veg Dinner",
+        "651265a9a34ce4001bfeb80d": "Sabudana khichri",
+        "651265f457cbc6001b36b046": "Vegetable Poha with Mint Chutney",
+        "6517b3f97a24dd001be18afa": "Veg Meal",
+        "6517b4463e837c001bf6969c": "Veg Meal",
+        "6517b4f28cb450001ce88023": "Non Veg Meal",
+        "65f039d348be920011647c9a": "Omelette with Bread",
+        "660a20b9613d01001353e11f": "Puri with Bhaji",
+        "661e609dcc105f001a5bc7b1": "Vada with Sabz Sambar",
+        "661e6206cc105f001a5bc7b4": "Chole with Samosa",
+        "661e62a0267412001ac87577": "Aloo Bhaji with Puri",
+        "662a0815e294190013def4eb": "Chole With Kulcha",
+        "662a08a89ad25200139c7fa7": "Stuffed Paratha With Pickle and Curd",
+        "665d3091e11fec0013e23fd3": "Poori with Chole",
+        "665fe5de33b69c001321012d": "Kuthal Dosa with Sambar and Chutney",
+        "670f9301c9680a0013ad55db": "Bhaji With Pao",
+        "670f9302c9680a0013ad55dc": "Stuffed Paratha With Curd and Pickle",
+        "670f9302c9680a0013ad55de": "South Indian Combo",
+        "670f9302c9680a0013ad55e1": "Plain Paratha With Bhaji ",
+        "670f9302c9680a0013ad55e4": "Chilla With Chutney",
+        "679b615fc962240014f7c700": "Veg Meal Lunch (MG)"
+      },
+      "item_name_to_id": {
+        "Non - Veg Meal": "64f8029ce7034b001b9df494",
+        "Veg Meal": "64f8029ce7034b001b9df49c",
+        "Non - Veg Dinner": "650461ed831d4a001bf5b2de",
+        "Sabudana khichri": "651265a9a34ce4001bfeb80d",
+        "Vegetable Poha with Mint Chutney": "651265f457cbc6001b36b046",
+        "Non Veg Meal": "6517b4f28cb450001ce88023",
+        "Omelette with Bread": "65f039d348be920011647c9a",
+        "Puri with Bhaji": "660a20b9613d01001353e11f",
+        "Vada with Sabz Sambar": "661e609dcc105f001a5bc7b1",
+        "Chole with Samosa": "661e6206cc105f001a5bc7b4",
+        "Aloo Bhaji with Puri": "661e62a0267412001ac87577",
+        "Chole With Kulcha": "662a0815e294190013def4eb",
+        "Stuffed Paratha With Pickle and Curd": "662a08a89ad25200139c7fa7",
+        "Poori with Chole": "665d3091e11fec0013e23fd3",
+        "Kuthal Dosa with Sambar and Chutney": "665fe5de33b69c001321012d",
+        "Bhaji With Pao": "670f9301c9680a0013ad55db",
+        "Stuffed Paratha With Curd and Pickle": "670f9302c9680a0013ad55dc",
+        "South Indian Combo": "670f9302c9680a0013ad55de",
+        "Plain Paratha With Bhaji ": "670f9302c9680a0013ad55e1",
+        "Chilla With Chutney": "670f9302c9680a0013ad55e4",
+        "Veg Meal Lunch (MG)": "679b615fc962240014f7c700"
+      }
+    },
+    "64df04908a0816001b300ca3": {
+      "item_id_to_name": {
+        "674a9c8d4cd0c4001ae29953": "Veg Burger with Cheese"
+      },
+      "item_name_to_id": {
+        "Veg Burger with Cheese": "674a9c8d4cd0c4001ae29953"
+      }
+    },
+    "6344eed430ea5e3b5b617c5b": {
+      "item_id_to_name": {
+        "64dcd43008b1c4001658c443": "Veg Combo",
+        "68515c55017606001a49a338": "Veg Combo",
+        "68bfb099262262001ac5fcdc": "Combo Meal",
+        "68bfb099262262001ac5fce0": "Veg Combo",
+        "68bfb618228b96001a59044e": "Veg Combo",
+        "68bfb6366671bc001ac2b3f6": "Veg Combo",
+        "68bfb65d751570001a6f7ec3": "Veg Combo",
+        "68bfb68e751570001a6f7ec6": "Non-Veg Combo"
+      },
+      "item_name_to_id": {
+        "Veg Combo": "68bfb099262262001ac5fce0",
+        "Combo Meal": "68bfb099262262001ac5fcdc",
+        "Non-Veg Combo": "68bfb68e751570001a6f7ec6"
+      }
+    },
+    "642a5a3abe27fc00173ac498": {
+      "item_id_to_name": {
+        "68bfada1105845001adfd0da": "Egg Ghotala with Toast",
+        "68bfada2105845001adfd12a": "Sabudana Kichadi With Curd"
+      },
+      "item_name_to_id": {
+        "Egg Ghotala with Toast": "68bfada1105845001adfd0da",
+        "Sabudana Kichadi With Curd": "68bfada2105845001adfd12a"
+      }
+    },
+    "64633e15e096c7001bf6ab32": {
+      "item_id_to_name": {
+        "68cfe1367739c7001420a9db": "Egg Biryani With Basmati Rice With Any Accompaniment",
+        "68cfe1367739c7001420a9de": "Egg Rice Combo",
+        "68cfe1367739c7001420a9e4": "Chicken Donne Biryani",
+        "68cfe1367739c7001420a9e9": "Chicken Roti Combo",
+        "68cfe1367739c7001420a9ea": "Egg Roti Combo",
+        "68cfe1377739c7001420aa08": "Lucknowi Egg Biryani With Salan And Kachumber Raita",
+        "68cfe1377739c7001420aa0e": "Chicken Rice Combo"
+      },
+      "item_name_to_id": {
+        "Egg Biryani With Basmati Rice With Any Accompaniment": "68cfe1367739c7001420a9db",
+        "Egg Rice Combo": "68cfe1367739c7001420a9de",
+        "Chicken Donne Biryani": "68cfe1367739c7001420a9e4",
+        "Chicken Roti Combo": "68cfe1367739c7001420a9e9",
+        "Egg Roti Combo": "68cfe1367739c7001420a9ea",
+        "Lucknowi Egg Biryani With Salan And Kachumber Raita": "68cfe1377739c7001420aa08",
+        "Chicken Rice Combo": "68cfe1377739c7001420aa0e"
+      }
+    },
+    "67b98d63ee768c001bcd986f": {
+      "item_id_to_name": {
+        "68d18d897739c7001420be3b": "Chinese Non-Veg Combo",
+        "68d18d897739c7001420be51": "Poha & Lemon With Sev",
+        "68d18d8a7739c7001420be57": "Chicken Combo",
+        "68d18d8a7739c7001420be61": "Bengal Bhetki (Without Curry)",
+        "68d18d8a7739c7001420be69": "Chinese Veg Combo",
+        "68d18d8a7739c7001420be83": "Veg Khichuri Combo",
+        "68d18d8a7739c7001420be8b": "Egg Combo",
+        "68d18d8a7739c7001420be9f": "Egg Thali",
+        "68d18d8a7739c7001420beac": "Veg Thali",
+        "68d18d8b7739c7001420bef2": "Chicken Thali",
+        "68d18d8b7739c7001420bf01": "Bengali Fish Curry Combo",
+        "68d18d8b7739c7001420bf9d": "Paneer Combo",
+        "68d18d897739c7001420be39": "Veg Thali",
+        "68d18d897739c7001420be40": "Paneer Combo",
+        "68d18d897739c7001420be47": "Chicken Thali",
+        "68d18d8a7739c7001420be5e": "Egg Combo",
+        "68d18d8a7739c7001420be7f": "Egg Thali"
+      },
+      "item_name_to_id": {
+        "Chinese Non-Veg Combo": "68d18d897739c7001420be3b",
+        "Poha & Lemon With Sev": "68d18d897739c7001420be51",
+        "Chicken Combo": "68d18d8a7739c7001420be57",
+        "Bengal Bhetki (Without Curry)": "68d18d8a7739c7001420be61",
+        "Chinese Veg Combo": "68d18d8a7739c7001420be69",
+        "Veg Khichuri Combo": "68d18d8a7739c7001420be83",
+        "Egg Combo": "68d18d8a7739c7001420be5e",
+        "Egg Thali": "68d18d8a7739c7001420be7f",
+        "Veg Thali": "68d18d897739c7001420be39",
+        "Chicken Thali": "68d18d897739c7001420be47",
+        "Bengali Fish Curry Combo": "68d18d8b7739c7001420bf01",
+        "Paneer Combo": "68d18d897739c7001420be40"
+      }
+    },
+    "684e6fc18fe8f6001acff516": {
+      "item_id_to_name": {
+        "68d1876594918d0013475451": "6 \"Paneer Hot Dog With Sub Bread",
+        "68d1876594918d00134754d7": "6 \"Chicken Seekh Kabab Hot Dog With Sub Bread",
+        "68d1876594918d00134754e0": "6 \"Chicken Hot Dog With Sub Bread"
+      },
+      "item_name_to_id": {
+        "6 \"Paneer Hot Dog With Sub Bread": "68d1876594918d0013475451",
+        "6 \"Chicken Seekh Kabab Hot Dog With Sub Bread": "68d1876594918d00134754d7",
+        "6 \"Chicken Hot Dog With Sub Bread": "68d1876594918d00134754e0"
+      }
+    },
+    "684fbf3dab3146001aa7031d": {
+      "item_id_to_name": {
+        "68b2868d5c599d001bc9f9ce": "Chinese Non-Veg Combo",
+        "68b2868d5c599d001bc9f9d3": "Chinese Veg Combo"
+      },
+      "item_name_to_id": {
+        "Chinese Non-Veg Combo": "68b2868d5c599d001bc9f9ce",
+        "Chinese Veg Combo": "68b2868d5c599d001bc9f9d3"
+      }
+    },
+    "685b978115eb22001361590a": {
+      "item_id_to_name": {
+        "68d1886279844c001216ad1c": "Chicken Biryani",
+        "68d1886279844c001216ad1e": "Chicken Thali",
+        "68d1886279844c001216ad1f": "Veg Paratha Combo",
+        "68d1886279844c001216ad20": "Paneer Combo",
+        "68d1886279844c001216ad2a": "Fish Thali",
+        "68d1886279844c001216ad3d": "Poha with Sev",
+        "68d1886279844c001216ad4a": "Veg Thali Of The Day",
+        "68d1886279844c001216ad4b": "Chicken Thali Of The Day",
+        "68d1886279844c001216ad4f": "Non Veg Paratha Combo",
+        "68d1886279844c001216ad6e": "Egg with Bread Toast",
+        "68d1886279844c001216ad7e": "Kichidi Veg Combo",
+        "68d1886279844c001216ad7f": "Chicken Combo",
+        "68d1886379844c001216addd": "Egg Combo",
+        "68d1886279844c001216ad32": "Fish Thali"
+      },
+      "item_name_to_id": {
+        "Chicken Biryani": "68d1886279844c001216ad1c",
+        "Chicken Thali": "68d1886279844c001216ad1e",
+        "Veg Paratha Combo": "68d1886279844c001216ad1f",
+        "Paneer Combo": "68d1886279844c001216ad20",
+        "Fish Thali": "68d1886279844c001216ad2a",
+        "Poha with Sev": "68d1886279844c001216ad3d",
+        "Veg Thali Of The Day": "68d1886279844c001216ad4a",
+        "Chicken Thali Of The Day": "68d1886279844c001216ad4b",
+        "Non Veg Paratha Combo": "68d1886279844c001216ad4f",
+        "Egg with Bread Toast": "68d1886279844c001216ad6e",
+        "Kichidi Veg Combo": "68d1886279844c001216ad7e",
+        "Chicken Combo": "68d1886279844c001216ad7f",
+        "Egg Combo": "68d1886379844c001216addd"
+      }
+    },
+    "64e9c3567b984a00173a752d": {
+      "item_id_to_name": {
+        "66adbc8a3699160013c94a53": "Bun With Jam"
+      },
+      "item_name_to_id": {
+        "Bun With Jam": "66adbc8a3699160013c94a53"
+      }
+    },
+    "67d26849fc2b44001ae6a817": {
+      "item_id_to_name": {
+        "67e3ef6cf9bbca001a4b9d6c": "Veg Thali",
+        "67e3efb7f0cbf2001acef6e8": "Premium Thali",
+        "67e8d97cc7668a0019f2b9d7": "Navratri Thali"
+      },
+      "item_name_to_id": {
+        "Veg Thali": "67e3ef6cf9bbca001a4b9d6c",
+        "Premium Thali": "67e3efb7f0cbf2001acef6e8",
+        "Navratri Thali": "67e8d97cc7668a0019f2b9d7"
+      }
+    },
+    "67dd3dcb1c72b600197f1168": {
+      "item_id_to_name": {
+        "67e54392f9bbca001a4b9e7c": "Dal Rice Combo",
+        "67e54392f9bbca001a4b9e7d": "Egg Bhurji Combo",
+        "67e54392f9bbca001a4b9e89": "Egg Curry Combo",
+        "67e54392f9bbca001a4b9e95": "Veg Combo",
+        "67e54392f9bbca001a4b9ea0": "Paneer Combo",
+        "67e54392f9bbca001a4b9eae": "Chicken Biryani",
+        "67e54392f9bbca001a4b9eaf": "Dal Makhani Combo",
+        "67e574b7f9bbca001a4b9f6b": "Paratha Combo",
+        "67e574b7f9bbca001a4b9f6c": "Veg Biryani",
+        "67e574b7f9bbca001a4b9f6d": "Rajma Combo",
+        "67ebc873c7668a0019f2be64": "Chinese Combo Non-Veg",
+        "67ebc873c7668a0019f2be6e": "Chinese Combo Veg",
+        "67ebc873c7668a0019f2be70": "Meal In A Bowl",
+        "67ebc873c7668a0019f2be73": "Meal In A Bowl Veg ",
+        "67ebc873c7668a0019f2be77": "Rice Combo 2",
+        "67ebc873c7668a0019f2be80": "Rice Combo 1",
+        "682737445e5ebc001a3796cd": "Assorted Pakoda With Chutney",
+        "682737445e5ebc001a3796de": "Paneer Fried Rice With Sauce"
+      },
+      "item_name_to_id": {
+        "Dal Rice Combo": "67e54392f9bbca001a4b9e7c",
+        "Egg Bhurji Combo": "67e54392f9bbca001a4b9e7d",
+        "Egg Curry Combo": "67e54392f9bbca001a4b9e89",
+        "Veg Combo": "67e54392f9bbca001a4b9e95",
+        "Paneer Combo": "67e54392f9bbca001a4b9ea0",
+        "Chicken Biryani": "67e54392f9bbca001a4b9eae",
+        "Dal Makhani Combo": "67e54392f9bbca001a4b9eaf",
+        "Paratha Combo": "67e574b7f9bbca001a4b9f6b",
+        "Veg Biryani": "67e574b7f9bbca001a4b9f6c",
+        "Rajma Combo": "67e574b7f9bbca001a4b9f6d",
+        "Chinese Combo Non-Veg": "67ebc873c7668a0019f2be64",
+        "Chinese Combo Veg": "67ebc873c7668a0019f2be6e",
+        "Meal In A Bowl": "67ebc873c7668a0019f2be70",
+        "Meal In A Bowl Veg ": "67ebc873c7668a0019f2be73",
+        "Rice Combo 2": "67ebc873c7668a0019f2be77",
+        "Rice Combo 1": "67ebc873c7668a0019f2be80",
+        "Assorted Pakoda With Chutney": "682737445e5ebc001a3796cd",
+        "Paneer Fried Rice With Sauce": "682737445e5ebc001a3796de"
+      }
+    },
+    "6004167c1595960a72f31707": {
+      "item_id_to_name": {
+        "68cea733e9c19300132fe733": "Veg Meal",
+        "68cea733e9c19300132fe73e": "Flavoured Rice with Gravy",
+        "68cea734e9c19300132fe76e": "Veg Biryani",
+        "68cea734e9c19300132fe7ad": "Rice Meal",
+        "68cea734e9c19300132fe7b2": "South Indian Veg Thali without Sweet"
+      },
+      "item_name_to_id": {
+        "Veg Meal": "68cea733e9c19300132fe733",
+        "Flavoured Rice with Gravy": "68cea733e9c19300132fe73e",
+        "Veg Biryani": "68cea734e9c19300132fe76e",
+        "Rice Meal": "68cea734e9c19300132fe7ad",
+        "South Indian Veg Thali without Sweet": "68cea734e9c19300132fe7b2"
+      }
+    },
+    "60599bd4b6dfef46f7241fef": {
+      "item_id_to_name": {
+        "68cea8c47739c700142092c8": "Biryani with Basmati Rice and Any Accompaniment",
+        "68cea8c47739c700142092ce": "North Indian Veg Thali without Sweet",
+        "68cea8c57739c700142092d9": "Support Staff Meal (Breakfast and Lunch)",
+        "68cea8c57739c700142092ee": "Plain Rice & with Dal",
+        "68cea8c57739c7001420933f": "Veg Shahi Biryani With Salan and Raita",
+        "68cea8c57739c70014209341": "Flavoured Rice with Gravy"
+      },
+      "item_name_to_id": {
+        "Biryani with Basmati Rice and Any Accompaniment": "68cea8c47739c700142092c8",
+        "North Indian Veg Thali without Sweet": "68cea8c47739c700142092ce",
+        "Support Staff Meal (Breakfast and Lunch)": "68cea8c57739c700142092d9",
+        "Plain Rice & with Dal": "68cea8c57739c700142092ee",
+        "Veg Shahi Biryani With Salan and Raita": "68cea8c57739c7001420933f",
+        "Flavoured Rice with Gravy": "68cea8c57739c70014209341"
+      }
+    },
+    "6296dc1c8eeb0973341fc168": {
+      "item_id_to_name": {
+        "68ceacd27739c700142094c0": "Paratha with Chicken Curry with Salad",
+        "68ceacd27739c700142094e8": "Paratha with Egg Curry",
+        "68ceacd27739c700142094e9": "Chicken Curry with paratha",
+        "68ceacd37739c70014209500": "Egg Biryani with Basmati Rice with any accompaniment",
+        "68ceacd37739c70014209515": "Chicken Biryani with Basmati Rice with any accompaniment",
+        "68ceacd37739c70014209567": "Lucknowi Egg Biryani With Salan and Kachumber Raita",
+        "68ceacd37739c70014209568": "Hyderabadi Chicken Dum Biryani with Mirchi ka Salan and Kachumber Raita"
+      },
+      "item_name_to_id": {
+        "Paratha with Chicken Curry with Salad": "68ceacd27739c700142094c0",
+        "Paratha with Egg Curry": "68ceacd27739c700142094e8",
+        "Chicken Curry with paratha": "68ceacd27739c700142094e9",
+        "Egg Biryani with Basmati Rice with any accompaniment": "68ceacd37739c70014209500",
+        "Chicken Biryani with Basmati Rice with any accompaniment": "68ceacd37739c70014209515",
+        "Lucknowi Egg Biryani With Salan and Kachumber Raita": "68ceacd37739c70014209567",
+        "Hyderabadi Chicken Dum Biryani with Mirchi ka Salan and Kachumber Raita": "68ceacd37739c70014209568"
+      }
+    },
+    "629b32fde44c8e62a76400f7": {
+      "item_id_to_name": {
+        "68d0084a52c2470013f34f04": "Chutney Pudi with Masala Dosa",
+        "68d0084a52c2470013f34f31": "Chutney Pudi with Plain Dosa",
+        "68d0084b52c2470013f34f67": "Support Staff Meal (Breakfast and Lunch)"
+      },
+      "item_name_to_id": {
+        "Chutney Pudi with Masala Dosa": "68d0084a52c2470013f34f04",
+        "Chutney Pudi with Plain Dosa": "68d0084a52c2470013f34f31",
+        "Support Staff Meal (Breakfast and Lunch)": "68d0084b52c2470013f34f67"
+      }
+    },
+    "61866983cbd33c2fa05aa2bb": {
+      "item_id_to_name": {
+        "68d17a98b06901001382c2cd": "Chapati with Veg Curry"
+      },
+      "item_name_to_id": {
+        "Chapati with Veg Curry": "68d17a98b06901001382c2cd"
+      }
+    },
+    "638458e1915f54780b60c644": {
+      "item_id_to_name": {
+        "67aae5e91ffabe00133adac3": "Flavored rice with NI gravy with sweet and salad",
+        "687ca9f2d069c0001a2c8adb": "Flavored rice with NI gravy with sweet and salad",
+        "68abdb5856041d001abb401a": "Flavored rice with NI gravy with sweet and salad",
+        "68ca44fb34926e001337b7a5": "Flavored rice with NI gravy with sweet and salad",
+        "68d14a282614630013a7b1e9": "South Indian Veg Thali With Sweet",
+        "68d14a292614630013a7b20c": "North Indian Veg Thali Without Sweet",
+        "68d14a292614630013a7b20e": "Chapati With Chicken Curry",
+        "68d14a292614630013a7b222": "Veg Meal",
+        "68d14a292614630013a7b22d": "Paratha with Chicken Curry with Salad",
+        "68d14a292614630013a7b235": "Chicken Biryani With Basmati Rice With Any Accompaniment",
+        "68d14a2b2614630013a7b323": "Variety Of Breakfast With Chutney",
+        "68d14a2b2614630013a7b32a": "Support Staff Meal (Breakfast And Lunch)"
+      },
+      "item_name_to_id": {
+        "Flavored rice with NI gravy with sweet and salad": "68ca44fb34926e001337b7a5",
+        "South Indian Veg Thali With Sweet": "68d14a282614630013a7b1e9",
+        "North Indian Veg Thali Without Sweet": "68d14a292614630013a7b20c",
+        "Chapati With Chicken Curry": "68d14a292614630013a7b20e",
+        "Veg Meal": "68d14a292614630013a7b222",
+        "Paratha with Chicken Curry with Salad": "68d14a292614630013a7b22d",
+        "Chicken Biryani With Basmati Rice With Any Accompaniment": "68d14a292614630013a7b235",
+        "Variety Of Breakfast With Chutney": "68d14a2b2614630013a7b323",
+        "Support Staff Meal (Breakfast And Lunch)": "68d14a2b2614630013a7b32a"
+      }
+    },
+    "6397f84ed6a6982bfd8544f7": {
+      "item_id_to_name": {
+        "64e2fd7d07c182001bba0dd0": "Veg Meal,",
+        "64e2fd7d07c182001bba0ddb": "Non - Veg Meal"
+      },
+      "item_name_to_id": {
+        "Veg Meal,": "64e2fd7d07c182001bba0dd0",
+        "Non - Veg Meal": "64e2fd7d07c182001bba0ddb"
+      }
+    },
+    "64defbea1cf0c4001728c0aa": {
+      "item_id_to_name": {
+        "64df3b5982896200171fcf3b": "Bun With Jam",
+        "65f837349c52c10011e740f6": "Bun maska Jam"
+      },
+      "item_name_to_id": {
+        "Bun With Jam": "64df3b5982896200171fcf3b",
+        "Bun maska Jam": "65f837349c52c10011e740f6"
+      }
+    },
+    "663a126b5ea697001a21c0b2": {
+      "item_id_to_name": {
+        "68d23f2f2614630013a7c22d": "Veg Biryani",
+        "68d23f2f2614630013a7c239": "Mini Meals",
+        "68d23f302614630013a7c264": "Chapati With Veg Kurma",
+        "68d23f302614630013a7c266": "South Indian Veg Thali with Sweet",
+        "68d23f302614630013a7c277": "Variety of North Indian Veg Combos"
+      },
+      "item_name_to_id": {
+        "Veg Biryani": "68d23f2f2614630013a7c22d",
+        "Mini Meals": "68d23f2f2614630013a7c239",
+        "Chapati With Veg Kurma": "68d23f302614630013a7c264",
+        "South Indian Veg Thali with Sweet": "68d23f302614630013a7c266",
+        "Variety of North Indian Veg Combos": "68d23f302614630013a7c277"
+      }
+    },
+    "675c1bfe7dabfe001a89a643": {
+      "item_id_to_name": {
+        "68d198cb2614630013a7bce6": "South Indian Non Veg Thali With Sweet",
+        "68d198cb2614630013a7bce8": "Chicken Biryani Without Egg",
+        "68d198cb2614630013a7bced": "Chicken Biryani With Egg",
+        "68d198cb2614630013a7bcf8": "Chapathi With Chicken Curry And Salad",
+        "68d198cb2614630013a7bcf9": "Egg Biryani",
+        "68d198cb2614630013a7bce3": "Chicken Biryani With Egg"
+      },
+      "item_name_to_id": {
+        "South Indian Non Veg Thali With Sweet": "68d198cb2614630013a7bce6",
+        "Chicken Biryani Without Egg": "68d198cb2614630013a7bce8",
+        "Chicken Biryani With Egg": "68d198cb2614630013a7bce3",
+        "Chapathi With Chicken Curry And Salad": "68d198cb2614630013a7bcf8",
+        "Egg Biryani": "68d198cb2614630013a7bcf9"
+      }
+    },
+    "684960b19b9a87001a77b8be": {
+      "item_id_to_name": {
+        "68d010fe94918d001347418f": "Bengali Fish Thali",
+        "68d010ff94918d0013474199": "Veg Thali Of The Day",
+        "68d010ff94918d00134741af": "Chicken Biryani with Egg",
+        "68d010ff94918d00134741b8": "Egg Combo",
+        "68d010ff94918d00134741b9": "Chicken Combo",
+        "68d010ff94918d00134741c7": "Chicken Thali Of The Day",
+        "68d0110094918d0013474266": "Paneer Combo",
+        "68d010fe94918d001347418c": "Veg Thali Of The Day",
+        "68d010ff94918d00134741c5": "Paneer Combo"
+      },
+      "item_name_to_id": {
+        "Bengali Fish Thali": "68d010fe94918d001347418f",
+        "Veg Thali Of The Day": "68d010fe94918d001347418c",
+        "Chicken Biryani with Egg": "68d010ff94918d00134741af",
+        "Egg Combo": "68d010ff94918d00134741b8",
+        "Chicken Combo": "68d010ff94918d00134741b9",
+        "Chicken Thali Of The Day": "68d010ff94918d00134741c7",
+        "Paneer Combo": "68d010ff94918d00134741c5"
+      }
+    },
+    "66eab36ca2fa79001337411e": {
+      "item_id_to_name": {
+        "66fe7622d140c800134b3fa2": "Lachha Paratha Combo - Non Veg",
+        "66fe7622d140c800134b3fa3": "Multi Grain Roti Combo - Non Veg",
+        "66fe7622d140c800134b3fb0": "Multi Grain Roti Combo - Veg",
+        "66fe7622d140c800134b3fb3": "Ruamli Roti With Egg",
+        "66fe7623d140c800134b3fbb": "Grill Chicken Meal",
+        "66fe7623d140c800134b3fc0": "Rumali Roti With Vegetable Curry",
+        "66fe7623d140c800134b3fc8": "Lachha Paratha Combo - Veg",
+        "66fe7623d140c800134b3fcc": "Ruamli Roti With Grill Chicken",
+        "66fe7622d140c800134b3f96": "Multi Grain Roti Combo - Non Veg"
+      },
+      "item_name_to_id": {
+        "Lachha Paratha Combo - Non Veg": "66fe7622d140c800134b3fa2",
+        "Multi Grain Roti Combo - Non Veg": "66fe7622d140c800134b3f96",
+        "Multi Grain Roti Combo - Veg": "66fe7622d140c800134b3fb0",
+        "Ruamli Roti With Egg": "66fe7622d140c800134b3fb3",
+        "Grill Chicken Meal": "66fe7623d140c800134b3fbb",
+        "Rumali Roti With Vegetable Curry": "66fe7623d140c800134b3fc0",
+        "Lachha Paratha Combo - Veg": "66fe7623d140c800134b3fc8",
+        "Ruamli Roti With Grill Chicken": "66fe7623d140c800134b3fcc"
+      }
+    },
+    "6053268e4ec6952ca5b46330": {
+      "item_id_to_name": {
+        "68ce5dbd2614630013a78e51": "Veg Biryani With Basmati Rice With Any Accompaniment",
+        "68ce5dbe2614630013a78ec5": "Veg Meal",
+        "68ce5dbf2614630013a78f06": "Flavored Rice with Gravy and Sweet and Salad",
+        "68ce5dbf2614630013a78f09": "South Indian Veg Thali With Sweet",
+        "68ce5dbf2614630013a78f11": "North Indian Veg Thali Without Sweet",
+        "68ce5dbf2614630013a78f13": "Support Staff Meal"
+      },
+      "item_name_to_id": {
+        "Veg Biryani With Basmati Rice With Any Accompaniment": "68ce5dbd2614630013a78e51",
+        "Veg Meal": "68ce5dbe2614630013a78ec5",
+        "Flavored Rice with Gravy and Sweet and Salad": "68ce5dbf2614630013a78f06",
+        "South Indian Veg Thali With Sweet": "68ce5dbf2614630013a78f09",
+        "North Indian Veg Thali Without Sweet": "68ce5dbf2614630013a78f11",
+        "Support Staff Meal": "68ce5dbf2614630013a78f13"
+      }
+    },
+    "626f96886ea9037357d4496d": {
+      "item_id_to_name": {
+        "68cfd63079844c0012168729": "Corn Masala Sandwich With Cheese"
+      },
+      "item_name_to_id": {
+        "Corn Masala Sandwich With Cheese": "68cfd63079844c0012168729"
+      }
+    },
+    "6376054fc09df47d4015b813": {
+      "item_id_to_name": {
+        "68ce945f52c2470013f31f51": "Chicken Curry Combo",
+        "68ce945f52c2470013f31f52": "Egg Curry Combo",
+        "68ce945f52c2470013f31f5c": "Egg Biryani",
+        "68ce945f52c2470013f31f5f": "Rice Chicken Curry Combo",
+        "68ce945f52c2470013f31f60": "Rice Egg Curry Combo",
+        "68ce945f52c2470013f31f77": "Paratha With Chicken Curry, Salad",
+        "68ce945f52c2470013f31f79": "Chicken Biryani With Basmati Rice With Any Accompaniment",
+        "68ce945f52c2470013f31f84": "Biryani Rice",
+        "68ce945f52c2470013f31f89": "Flavoured Rice Chicken Curry Combo"
+      },
+      "item_name_to_id": {
+        "Chicken Curry Combo": "68ce945f52c2470013f31f51",
+        "Egg Curry Combo": "68ce945f52c2470013f31f52",
+        "Egg Biryani": "68ce945f52c2470013f31f5c",
+        "Rice Chicken Curry Combo": "68ce945f52c2470013f31f5f",
+        "Rice Egg Curry Combo": "68ce945f52c2470013f31f60",
+        "Paratha With Chicken Curry, Salad": "68ce945f52c2470013f31f77",
+        "Chicken Biryani With Basmati Rice With Any Accompaniment": "68ce945f52c2470013f31f79",
+        "Biryani Rice": "68ce945f52c2470013f31f84",
+        "Flavoured Rice Chicken Curry Combo": "68ce945f52c2470013f31f89"
+      }
+    },
+    "675c1f7effb223001aad0e6a": {
+      "item_id_to_name": {
+        "68cef96079844c00121675d6": "Chicken Biryani With Egg",
+        "68cef96079844c00121675d7": "Chapathi with chicken curry",
+        "68cef96079844c00121675d9": "Chicken Biryani Without Egg",
+        "68cef96079844c00121675da": "Egg Biriyani Combo",
+        "68cef96079844c00121675dd": "South Indian Non Veg Thali with Sweet"
+      },
+      "item_name_to_id": {
+        "Chicken Biryani With Egg": "68cef96079844c00121675d6",
+        "Chapathi with chicken curry": "68cef96079844c00121675d7",
+        "Chicken Biryani Without Egg": "68cef96079844c00121675d9",
+        "Egg Biriyani Combo": "68cef96079844c00121675da",
+        "South Indian Non Veg Thali with Sweet": "68cef96079844c00121675dd"
+      }
+    },
+    "67a1ccc868109c00138558a9": {
+      "item_id_to_name": {
+        "68ceb2ab79844c0012166f62": "Veg Biryani With Basmati Rice With Any Accompaniment",
+        "68ceb2ab79844c0012166f6e": "South Indian Meal Without Chapati",
+        "68ceb2ab79844c0012166f7a": "South Indian Veg Thali Without Sweet",
+        "68ceb2ab79844c0012166f93": "Variety Of South Indian Veg Combos",
+        "68ceb2ab79844c0012166f94": "Chapati With Kurma",
+        "68ceb2ab79844c0012166f97": "Poori with Bhaji",
+        "68ceb2ab79844c0012166fba": "Chapati with Veg Kurma"
+      },
+      "item_name_to_id": {
+        "Veg Biryani With Basmati Rice With Any Accompaniment": "68ceb2ab79844c0012166f62",
+        "South Indian Meal Without Chapati": "68ceb2ab79844c0012166f6e",
+        "South Indian Veg Thali Without Sweet": "68ceb2ab79844c0012166f7a",
+        "Variety Of South Indian Veg Combos": "68ceb2ab79844c0012166f93",
+        "Chapati With Kurma": "68ceb2ab79844c0012166f94",
+        "Poori with Bhaji": "68ceb2ab79844c0012166f97",
+        "Chapati with Veg Kurma": "68ceb2ab79844c0012166fba"
+      }
+    },
+    "67a4e64aa334d00013a10be7": {
+      "item_id_to_name": {
+        "68ce99957739c70014209275": "Chapati with Veg Kurma Combo",
+        "68ce99957739c7001420927c": "Variety of North Indian Veg Combos"
+      },
+      "item_name_to_id": {
+        "Chapati with Veg Kurma Combo": "68ce99957739c70014209275",
+        "Variety of North Indian Veg Combos": "68ce99957739c7001420927c"
+      }
+    },
+    "6881e7a47266d6001957aba9": {
+      "item_id_to_name": {
+        "68d34248b06901001382dfd6": "Cornflakes With Milk"
+      },
+      "item_name_to_id": {
+        "Cornflakes With Milk": "68d34248b06901001382dfd6"
+      }
+    },
+    "667e4ff17bd01f001a6ec74e": {
+      "item_id_to_name": {
+        "667f9ac1b159bc001a916337": "Veg Meal",
+        "667fcc33b159bc001a916393": "Non - Veg Meal",
+        "68be79407a62f1001aac6a67": "Veg Meal - 2",
+        "68be7968262262001ac5fba9": "Non Veg Meal - 2"
+      },
+      "item_name_to_id": {
+        "Veg Meal": "667f9ac1b159bc001a916337",
+        "Non - Veg Meal": "667fcc33b159bc001a916393",
+        "Veg Meal - 2": "68be79407a62f1001aac6a67",
+        "Non Veg Meal - 2": "68be7968262262001ac5fba9"
+      }
+    },
+    "66ab376ee522090013648938": {
+      "item_id_to_name": {
+        "66e90968c90bba0013f80c1b": "Paneer Parantha With Pickle and Curd",
+        "66e90968c90bba0013f80c7c": "Aloo Paranta With Pickle and Curd",
+        "66e96d5743226d00136af415": "Bun Maska with Butter"
+      },
+      "item_name_to_id": {
+        "Paneer Parantha With Pickle and Curd": "66e90968c90bba0013f80c1b",
+        "Aloo Paranta With Pickle and Curd": "66e90968c90bba0013f80c7c",
+        "Bun Maska with Butter": "66e96d5743226d00136af415"
+      }
+    },
+    "687895f2fc72bd001be3942a": {
+      "item_id_to_name": {
+        "689b13593e505e001accd471": "Non - Veg Meal",
+        "689b13593e505e001accd479": "Veg Meal",
+        "689b13593e505e001accd47c": "Veg Biryani",
+        "689b13593e505e001accd47d": "Chicken Biryani",
+        "689b135a3e505e001accd49a": "Paratha With Paneer Curry",
+        "689b135a3e505e001accd4c7": "Veg Meals",
+        "689b135a3e505e001accd4ff": "Mini Meal",
+        "68ac6c381d7a46001ac055e1": "Veg Chinese Combo\t",
+        "68ac6c52105845001adf896d": "Non-Veg Chinese Combo\t"
+      },
+      "item_name_to_id": {
+        "Non - Veg Meal": "689b13593e505e001accd471",
+        "Veg Meal": "689b13593e505e001accd479",
+        "Veg Biryani": "689b13593e505e001accd47c",
+        "Chicken Biryani": "689b13593e505e001accd47d",
+        "Paratha With Paneer Curry": "689b135a3e505e001accd49a",
+        "Veg Meals": "689b135a3e505e001accd4c7",
+        "Mini Meal": "689b135a3e505e001accd4ff",
+        "Veg Chinese Combo\t": "68ac6c381d7a46001ac055e1",
+        "Non-Veg Chinese Combo\t": "68ac6c52105845001adf896d"
+      }
+    },
+    "6482d8614f5bd6001ba34682": {
+      "item_id_to_name": {
+        "64830cb24f5bd6001ba348ee": "Egg Biryani with Basmati Rice Raitha,salad",
+        "68d20f6452c2470013f378db": "Chicken Biryani",
+        "68d20f6552c2470013f378ff": "Egg Curry With Paratha & Salad, Raitha"
+      },
+      "item_name_to_id": {
+        "Egg Biryani with Basmati Rice Raitha,salad": "64830cb24f5bd6001ba348ee",
+        "Chicken Biryani": "68d20f6452c2470013f378db",
+        "Egg Curry With Paratha & Salad, Raitha": "68d20f6552c2470013f378ff"
+      }
+    },
+    "66e3f26496ec49001a8e042a": {
+      "item_id_to_name": {
+        "68d34cb5bdac9600130500d0": "Chole Chawal Combo",
+        "68d34cb5bdac9600130500d1": "Plain Rice With Sabji And Sweet And Salad",
+        "68d34cb5bdac9600130500d3": "Flavoured Rice With Gravy, Sweet, Salad",
+        "68d34cb6bdac9600130500e1": "Veg Combo",
+        "68d34cb6bdac9600130500e5": "Veg Biryani",
+        "68d34cb6bdac9600130500fc": "Plain Rice With Sabji",
+        "68d34cb6bdac960013050107": "North Indian Veg Thali With Sweet",
+        "68d34cb6bdac960013050109": "South Veg Combo",
+        "68d34cb6bdac960013050119": "Chutney Pudi With Plain Dosa",
+        "68d34cb6bdac96001305011a": "Chutney Pudi With Masala Dosa",
+        "68d34cb6bdac96001305012a": "Biryani With Basmati Rice And Any Accompaniment",
+        "68d34cb6bdac960013050138": "Rice Meal",
+        "68d34cb6bdac960013050142": "Biryani With Basmati Rice With Any Accompaniment",
+        "68d34cb6bdac960013050144": "South Indian Veg Thali With Sweet",
+        "68d34cb7bdac9600130501c4": "Veg Meal",
+        "68d34cb7bdac9600130501cf": "Support Staff Meal (Breakfast And Lunch)",
+        "68d34cb5bdac9600130500d2": "Plain Rice With Sabji"
+      },
+      "item_name_to_id": {
+        "Chole Chawal Combo": "68d34cb5bdac9600130500d0",
+        "Plain Rice With Sabji And Sweet And Salad": "68d34cb5bdac9600130500d1",
+        "Flavoured Rice With Gravy, Sweet, Salad": "68d34cb5bdac9600130500d3",
+        "Veg Combo": "68d34cb6bdac9600130500e1",
+        "Veg Biryani": "68d34cb6bdac9600130500e5",
+        "Plain Rice With Sabji": "68d34cb5bdac9600130500d2",
+        "North Indian Veg Thali With Sweet": "68d34cb6bdac960013050107",
+        "South Veg Combo": "68d34cb6bdac960013050109",
+        "Chutney Pudi With Plain Dosa": "68d34cb6bdac960013050119",
+        "Chutney Pudi With Masala Dosa": "68d34cb6bdac96001305011a",
+        "Biryani With Basmati Rice And Any Accompaniment": "68d34cb6bdac96001305012a",
+        "Rice Meal": "68d34cb6bdac960013050138",
+        "Biryani With Basmati Rice With Any Accompaniment": "68d34cb6bdac960013050142",
+        "South Indian Veg Thali With Sweet": "68d34cb6bdac960013050144",
+        "Veg Meal": "68d34cb7bdac9600130501c4",
+        "Support Staff Meal (Breakfast And Lunch)": "68d34cb7bdac9600130501cf"
+      }
+    },
+    "680a24fab8772b001a09a05d": {
+      "item_id_to_name": {
+        "68b28a1b1bc7b7001aa1b050": "Mojito Small Fries Combo",
+        "68b28a1b1bc7b7001aa1b05a": "Mojito Medium Fries Combo"
+      },
+      "item_name_to_id": {
+        "Mojito Small Fries Combo": "68b28a1b1bc7b7001aa1b050",
+        "Mojito Medium Fries Combo": "68b28a1b1bc7b7001aa1b05a"
+      }
+    },
+    "630c2f4b1d03704a4b9d5774": {
+      "item_id_to_name": {
+        "68d1cc51b458050013121b70": "Chicken Biryani With Basmati Rice With Any Accompaniment",
+        "68d1cc51b458050013121b8d": "Rice Meal",
+        "68d1cc51b458050013121b9b": "Kerla Parota Egg Curry Combo",
+        "68d1cc51b458050013121ba5": "Egg Biryani With Basmati Rice With Any Accompaniment",
+        "68d1cc51b458050013121bbd": "Ambur Chicken Biryani With Salan And Kachumber Raita"
+      },
+      "item_name_to_id": {
+        "Chicken Biryani With Basmati Rice With Any Accompaniment": "68d1cc51b458050013121b70",
+        "Rice Meal": "68d1cc51b458050013121b8d",
+        "Kerla Parota Egg Curry Combo": "68d1cc51b458050013121b9b",
+        "Egg Biryani With Basmati Rice With Any Accompaniment": "68d1cc51b458050013121ba5",
+        "Ambur Chicken Biryani With Salan And Kachumber Raita": "68d1cc51b458050013121bbd"
+      }
+    },
+    "64a4439f929d03001b232c79": {
+      "item_id_to_name": {
+        "68d1c52f52c2470013f37498": "Brown Rice Bowl With Paneer",
+        "68d1c52f52c2470013f374a1": "Brown Rice Bowl With Mushroom",
+        "68d1c52f52c2470013f374a3": "Red Rice Bowl With Soya",
+        "68d1c52f52c2470013f374a4": "Akki Roti With Chutney",
+        "68d1c52f52c2470013f374ae": "Rice Bowl Combo 2",
+        "68d1c52f52c2470013f374af": "Red Rice Bowl With Paneer",
+        "68d1c52f52c2470013f374b1": "Brown Rice Bowl With Soya",
+        "68d1c52f52c2470013f374c7": "Red Rice Bowl With Mushroom",
+        "68d1c52f52c2470013f374c9": "Akki Roti And Ragi Roti With Chutney",
+        "68d1c53052c2470013f374eb": "Ragi Roti With Chutney"
+      },
+      "item_name_to_id": {
+        "Brown Rice Bowl With Paneer": "68d1c52f52c2470013f37498",
+        "Brown Rice Bowl With Mushroom": "68d1c52f52c2470013f374a1",
+        "Red Rice Bowl With Soya": "68d1c52f52c2470013f374a3",
+        "Akki Roti With Chutney": "68d1c52f52c2470013f374a4",
+        "Rice Bowl Combo 2": "68d1c52f52c2470013f374ae",
+        "Red Rice Bowl With Paneer": "68d1c52f52c2470013f374af",
+        "Brown Rice Bowl With Soya": "68d1c52f52c2470013f374b1",
+        "Red Rice Bowl With Mushroom": "68d1c52f52c2470013f374c7",
+        "Akki Roti And Ragi Roti With Chutney": "68d1c52f52c2470013f374c9",
+        "Ragi Roti With Chutney": "68d1c53052c2470013f374eb"
+      }
+    },
+    "667d3aa4f9b003001a0a3825": {
+      "item_id_to_name": {
+        "68cecddab45805001311efc1": "Kerala Parotta with Curry",
+        "68cecddbb45805001311efed": "Chapati with Veg Curry"
+      },
+      "item_name_to_id": {
+        "Kerala Parotta with Curry": "68cecddab45805001311efc1",
+        "Chapati with Veg Curry": "68cecddbb45805001311efed"
+      }
+    },
+    "66b48466824872001381c753": {
+      "item_id_to_name": {
+        "68cf916ce9c19300132fefe4": "Grilled Corn and Capsicum Cheese Sandwich With Chips "
+      },
+      "item_name_to_id": {
+        "Grilled Corn and Capsicum Cheese Sandwich With Chips ": "68cf916ce9c19300132fefe4"
+      }
+    },
+    "66e3f3ef439ddc001aa23ae2": {
+      "item_id_to_name": {
+        "68a9b78c751570001a6e7c57": "Rice Meal",
+        "68a9b78c751570001a6e7c5b": "North Indian Veg Thali with Sweet",
+        "68a9b78c751570001a6e7c5e": "Veg meal",
+        "68a9b78c751570001a6e7c62": "Biryani With Basmati Rice With Any Accompaniment",
+        "68a9b78c751570001a6e7c69": "Plain Rice, Sabji, Sweet With Salad",
+        "68a9b78c751570001a6e7c70": "Plain Rice with Sabji",
+        "68a9b78c751570001a6e7c76": "South Indian Veg Thali with Sweet"
+      },
+      "item_name_to_id": {
+        "Rice Meal": "68a9b78c751570001a6e7c57",
+        "North Indian Veg Thali with Sweet": "68a9b78c751570001a6e7c5b",
+        "Veg meal": "68a9b78c751570001a6e7c5e",
+        "Biryani With Basmati Rice With Any Accompaniment": "68a9b78c751570001a6e7c62",
+        "Plain Rice, Sabji, Sweet With Salad": "68a9b78c751570001a6e7c69",
+        "Plain Rice with Sabji": "68a9b78c751570001a6e7c70",
+        "South Indian Veg Thali with Sweet": "68a9b78c751570001a6e7c76"
+      }
+    },
+    "68baf395228b96001a58ef4a": {
+      "item_id_to_name": {
+        "68bb0cb3228b96001a58ef53": "North Indian Veg Thali With Sweet"
+      },
+      "item_name_to_id": {
+        "North Indian Veg Thali With Sweet": "68bb0cb3228b96001a58ef53"
+      }
+    },
+    "66c2f662f616ee0013485ce4": {
+      "item_id_to_name": {
+        "68cf0e9a52c2470013f33afa": "Curd Rice Combo",
+        "68cf0e9a52c2470013f33b0a": "Plain Rice with Sabji",
+        "68cf0e9b52c2470013f33b53": "South Indian Veg Thali with Sweet",
+        "68cf0e9b52c2470013f33b5c": "Veg Meal",
+        "68cf0e9b52c2470013f33b63": "Support Staff Meal (Breakfast and Lunch)",
+        "68cf0e9c52c2470013f33c00": "Veg Biryani",
+        "68cf0e9c52c2470013f33c09": "Biryani with Basmati Rice and Any Accompaniment",
+        "68db6830e9c1930013302988": "Mini Meal"
+      },
+      "item_name_to_id": {
+        "Curd Rice Combo": "68cf0e9a52c2470013f33afa",
+        "Plain Rice with Sabji": "68cf0e9a52c2470013f33b0a",
+        "South Indian Veg Thali with Sweet": "68cf0e9b52c2470013f33b53",
+        "Veg Meal": "68cf0e9b52c2470013f33b5c",
+        "Support Staff Meal (Breakfast and Lunch)": "68cf0e9b52c2470013f33b63",
+        "Veg Biryani": "68cf0e9c52c2470013f33c00",
+        "Biryani with Basmati Rice and Any Accompaniment": "68cf0e9c52c2470013f33c09",
+        "Mini Meal": "68db6830e9c1930013302988"
+      }
+    },
+    "68550c3a9dd89a001a32a7e5": {
+      "item_id_to_name": {
+        "68cf160c2614630013a7a16c": "Chicken Combo",
+        "68cf160c2614630013a7a177": "Egg With Chicken Mix Roll",
+        "68cf160c2614630013a7a18e": "Chicken Curry With Parota",
+        "68cf160d2614630013a7a1da": "Chicken Curry With White Rice"
+      },
+      "item_name_to_id": {
+        "Chicken Combo": "68cf160c2614630013a7a16c",
+        "Egg With Chicken Mix Roll": "68cf160c2614630013a7a177",
+        "Chicken Curry With Parota": "68cf160c2614630013a7a18e",
+        "Chicken Curry With White Rice": "68cf160d2614630013a7a1da"
+      }
+    },
+    "61e3a3cc77eb426ff13294b8": {
+      "item_id_to_name": {
+        "65f2c2de79bf610011e97e6a": "Chicken Kali Mirch with Butter Naan",
+        "65f2c3da0858ce0012f94f21": "Chicken Kali Mirch with Tandoori Roti",
+        "65f2c4af04f6390011a8dd43": "Sahi Paneer with Butter Naan ",
+        "65f2c5df075b3f00116dcba0": "Sahi Paneer with Tandoori Roti ",
+        "67a7590a9474fa0013bf060f": "Chicken Kali Mirch with Butter Naan",
+        "67a7590b9474fa0013bf0668": "Chicken Kali Mirch with Tandoori Roti",
+        "68d18e6652c2470013f3678c": "Chicken Biryani",
+        "68d18e6652c2470013f36794": "Regular Meal",
+        "68d18e6652c2470013f36795": "Egg Meal",
+        "68d18e6652c2470013f36797": "Egg Biryani",
+        "68d18e6652c2470013f367a1": "Veg Biryani",
+        "68d18e6652c2470013f367c2": "Full Meal",
+        "68d18e6752c2470013f36833": "Veg Combo Meal",
+        "68d18e6752c2470013f36836": "Veg Fried Rice With Chilli Paneer",
+        "68d18e6752c2470013f36845": "Idli with Sambar",
+        "68d18e6852c2470013f36856": "Paneer Combo Meal",
+        "68d18e6852c2470013f368d9": "Choley With Rice",
+        "68d18e6852c2470013f368da": "Rajma With Rice",
+        "68d18e6852c2470013f368e5": "Kadi Pakoda With Rice",
+        "68d26773b06901001382d354": "Navratri Thali"
+      },
+      "item_name_to_id": {
+        "Chicken Kali Mirch with Butter Naan": "67a7590a9474fa0013bf060f",
+        "Chicken Kali Mirch with Tandoori Roti": "67a7590b9474fa0013bf0668",
+        "Sahi Paneer with Butter Naan ": "65f2c4af04f6390011a8dd43",
+        "Sahi Paneer with Tandoori Roti ": "65f2c5df075b3f00116dcba0",
+        "Chicken Kali Mirch With Butter Naan": "67a7590a9474fa0013bf060f",
+        "Chicken Kali Mirch With Tandoori Roti": "67a7590b9474fa0013bf0668",
+        "Chicken Biryani": "68d18e6652c2470013f3678c",
+        "Regular Meal": "68d18e6652c2470013f36794",
+        "Egg Meal": "68d18e6652c2470013f36795",
+        "Egg Biryani": "68d18e6652c2470013f36797",
+        "Veg Biryani": "68d18e6652c2470013f367a1",
+        "Full Meal": "68d18e6652c2470013f367c2",
+        "Veg Combo Meal": "68d18e6752c2470013f36833",
+        "Veg Fried Rice With Chilli Paneer": "68d18e6752c2470013f36836",
+        "Idli with Sambar": "68d18e6752c2470013f36845",
+        "Paneer Combo Meal": "68d18e6852c2470013f36856",
+        "Choley With Rice": "68d18e6852c2470013f368d9",
+        "Rajma With Rice": "68d18e6852c2470013f368da",
+        "Kadi Pakoda With Rice": "68d18e6852c2470013f368e5",
+        "Navratri Thali": "68d26773b06901001382d354"
+      }
+    },
+    "6281f1916d5a3f5e1dbdacc6": {
+      "item_id_to_name": {
+        "68d2da2752c2470013f38184": "Half Fry with Bread",
+        "68d2da2752c2470013f3818f": "Puri With Choley",
+        "68d2da2852c2470013f381a4": "Puri With Sabzi"
+      },
+      "item_name_to_id": {
+        "Half Fry with Bread": "68d2da2752c2470013f38184",
+        "Puri With Choley": "68d2da2752c2470013f3818f",
+        "Puri With Sabzi": "68d2da2852c2470013f381a4"
+      }
+    },
+    "652f91a6feb690001008df55": {
+      "item_id_to_name": {
+        "68ceafaeb06901001382a685": "Bun With Jam"
+      },
+      "item_name_to_id": {
+        "Bun With Jam": "68ceafaeb06901001382a685"
+      }
+    },
+    "667da2f5236e16001a7a4a60": {
+      "item_id_to_name": {
+        "68d181cf52c2470013f36381": "Veg Combo"
+      },
+      "item_name_to_id": {
+        "Veg Combo": "68d181cf52c2470013f36381"
+      }
+    },
+    "684a855ebd30fd001a1bd0a1": {
+      "item_id_to_name": {
+        "68ce9fa7b069010013829ab9": "Veggie Patty With Cheese Burger"
+      },
+      "item_name_to_id": {
+        "Veggie Patty With Cheese Burger": "68ce9fa7b069010013829ab9"
+      }
+    },
+    "677f7350cceeca001339c24a": {
+      "item_id_to_name": {
+        "68cef6cb79844c0012167576": "Chicken Biryani Without Egg",
+        "68cef6cb79844c001216757d": "Egg Biryani",
+        "68cef6cb79844c0012167580": "South Indian Non Veg Thali with Sweet",
+        "68cef6cb79844c0012167584": "Chicken Biryani With Egg",
+        "68cef6cb79844c0012167586": "Chapati with chicken curry"
+      },
+      "item_name_to_id": {
+        "Chicken Biryani Without Egg": "68cef6cb79844c0012167576",
+        "Egg Biryani": "68cef6cb79844c001216757d",
+        "South Indian Non Veg Thali with Sweet": "68cef6cb79844c0012167580",
+        "Chicken Biryani With Egg": "68cef6cb79844c0012167584",
+        "Chapati with chicken curry": "68cef6cb79844c0012167586"
+      }
+    },
+    "67a4bb46f8cc1b0013ab12a8": {
+      "item_id_to_name": {
+        "68cf1bd3e9c19300132fee9d": "Variety Of Breakfast Combos",
+        "68cf1bd3e9c19300132feea6": "Variety Of South Indian Veg Combos",
+        "68cf1bd3e9c19300132feec7": "South Indian Meal Without Chapati",
+        "68cf1bd3e9c19300132feeeb": "South Indian Veg Thali With Sweet"
+      },
+      "item_name_to_id": {
+        "Variety Of Breakfast Combos": "68cf1bd3e9c19300132fee9d",
+        "Variety Of South Indian Veg Combos": "68cf1bd3e9c19300132feea6",
+        "South Indian Meal Without Chapati": "68cf1bd3e9c19300132feec7",
+        "South Indian Veg Thali With Sweet": "68cf1bd3e9c19300132feeeb"
+      }
+    },
+    "67a4e075c962240014f7edc8": {
+      "item_id_to_name": {
+        "68cefd4a7739c70014209eb4": "Chapati with Veg Kurma Combo",
+        "68cefd4a7739c70014209ebf": "Variety of North Indian Veg Combos"
+      },
+      "item_name_to_id": {
+        "Chapati with Veg Kurma Combo": "68cefd4a7739c70014209eb4",
+        "Variety of North Indian Veg Combos": "68cefd4a7739c70014209ebf"
+      }
+    },
+    "6346b2651b3f3d42ec4f7eb5": {
+      "item_id_to_name": {
+        "636f67cd26aa5b30364e9d5e": "Egg bhurji with plain paratha 2pc",
+        "638ada501f66ca1e6d087761": "Egg bhurji with plain paratha 2pc",
+        "6398753f0b23552c6f56a728": "Egg bhurji with plain paratha 2pc",
+        "6437988368bce9001bb15835": "Egg bhurji with plain paratha 2pc",
+        "66ebbd46a2fa79001337478a": "Egg bhurji with plain paratha 2pc",
+        "68ea5587b069010013830370": "Egg Bhurji with Plain Paratha ",
+        "68ea5589b069010013830409": "Plain Chilla With Chutney",
+        "68ea5589b06901001383040e": "Paneer Bhurji With Plain Paratha"
+      },
+      "item_name_to_id": {
+        "Egg bhurji with plain paratha 2pc": "66ebbd46a2fa79001337478a",
+        "Egg Bhurji with Plain Paratha ": "68ea5587b069010013830370",
+        "Plain Chilla With Chutney": "68ea5589b069010013830409",
+        "Paneer Bhurji With Plain Paratha": "68ea5589b06901001383040e"
+      }
+    },
+    "663b130d27bf180013bf1abf": {
+      "item_id_to_name": {
+        "663b18ef0f64b8001219635f": "Veg Combo",
+        "6721e55734969b001abdfc13": "Veg Combo"
+      },
+      "item_name_to_id": {
+        "Veg Combo": "6721e55734969b001abdfc13"
+      }
+    },
+    "6880dd3a38ecce001a8077aa": {
+      "item_id_to_name": {
+        "6884ac415140ae001a1984d2": "Mushroom Biryani",
+        "6884ac415140ae001a1984e1": "Chapati with Kurma",
+        "6884ac415140ae001a1984e6": "Mini Meals",
+        "6884ac415140ae001a1984e7": "North Indian Meals with Sweet",
+        "6884ac415140ae001a1984f0": "Veg Biryani",
+        "6884ac415140ae001a1984f6": "Parotta with Kurma",
+        "6884ac415140ae001a19851b": "South Indian Veg Meal",
+        "6884ac415140ae001a198524": "North Indian Value Veg Meal",
+        "6884ac415140ae001a19852b": "North Indian Veg Meal without Sweet",
+        "68efc6b352c2470013f3d428": "DIWALI SPECIAL MEALS"
+      },
+      "item_name_to_id": {
+        "Mushroom Biryani": "6884ac415140ae001a1984d2",
+        "Chapati with Kurma": "6884ac415140ae001a1984e1",
+        "Mini Meals": "6884ac415140ae001a1984e6",
+        "North Indian Meals with Sweet": "6884ac415140ae001a1984e7",
+        "Veg Biryani": "6884ac415140ae001a1984f0",
+        "Parotta with Kurma": "6884ac415140ae001a1984f6",
+        "South Indian Veg Meal": "6884ac415140ae001a19851b",
+        "North Indian Value Veg Meal": "6884ac415140ae001a198524",
+        "North Indian Veg Meal without Sweet": "6884ac415140ae001a19852b",
+        "DIWALI SPECIAL MEALS": "68efc6b352c2470013f3d428"
+      }
+    },
+    "6880e17c07a321001a92f4a3": {
+      "item_id_to_name": {
+        "6884b5ab8d7463001a27ca3e": "Poori with Masala",
+        "6884b5ab8d7463001a27ca3f": "Idly Combo",
+        "6884b5ab8d7463001a27ca47": "Veg Fried Rice Combo",
+        "6884b5ab8d7463001a27ca4f": "Mushroom Biryani",
+        "6884b5ab8d7463001a27ca50": "Veg Biryani",
+        "6884b5ab8d7463001a27ca55": "Idly and Pongal Combo",
+        "6884b5ab8d7463001a27ca5e": "Veg Noodles Combo",
+        "6884b5ab8d7463001a27ca61": "Idiyappam With Kurma",
+        "6884b5ab8d7463001a27ca71": "Paneer Biryani",
+        "6884b5ab8d7463001a27ca78": "Pongal Combo",
+        "6884b5ab8d7463001a27ca7c": "Parotta With Kuruma"
+      },
+      "item_name_to_id": {
+        "Poori with Masala": "6884b5ab8d7463001a27ca3e",
+        "Idly Combo": "6884b5ab8d7463001a27ca3f",
+        "Veg Fried Rice Combo": "6884b5ab8d7463001a27ca47",
+        "Mushroom Biryani": "6884b5ab8d7463001a27ca4f",
+        "Veg Biryani": "6884b5ab8d7463001a27ca50",
+        "Idly and Pongal Combo": "6884b5ab8d7463001a27ca55",
+        "Veg Noodles Combo": "6884b5ab8d7463001a27ca5e",
+        "Idiyappam With Kurma": "6884b5ab8d7463001a27ca61",
+        "Paneer Biryani": "6884b5ab8d7463001a27ca71",
+        "Pongal Combo": "6884b5ab8d7463001a27ca78",
+        "Parotta With Kuruma": "6884b5ab8d7463001a27ca7c"
+      }
+    },
+    "689446b33bf1e0001a2b4310": {
+      "item_id_to_name": {
+        "68970452d7a394001ac4289d": "Chicken - 65 Biryani",
+        "68970452d7a394001ac428a7": "Parotta With Chicken Gravy",
+        "68970452d7a394001ac428a8": "Egg Biryani",
+        "68970452d7a394001ac428b1": "Chicken Biryani",
+        "68970452d7a394001ac428bc": "Chapati With Chicken Gravy",
+        "68970452d7a394001ac428c8": "Chicken Meal",
+        "68970452d7a394001ac428cb": "Plain Biryani",
+        "68970452d7a394001ac428cf": "Parotta With Chicken Curry",
+        "68970452d7a394001ac428d8": "Chicken Fried Rice Combo",
+        "68970452d7a394001ac428fc": "Chapati With Chicken Curry",
+        "69020aeeb069010013834d6f": "Chapati Egg Combo",
+        "68970452d7a394001ac428aa": "Chicken Biryani"
+      },
+      "item_name_to_id": {
+        "Chicken - 65 Biryani": "68970452d7a394001ac4289d",
+        "Parotta With Chicken Gravy": "68970452d7a394001ac428a7",
+        "Egg Biryani": "68970452d7a394001ac428a8",
+        "Chicken Biryani": "68970452d7a394001ac428b1",
+        "Chapati With Chicken Gravy": "68970452d7a394001ac428bc",
+        "Chicken Meal": "68970452d7a394001ac428c8",
+        "Plain Biryani": "68970452d7a394001ac428cb",
+        "Parotta With Chicken Curry": "68970452d7a394001ac428cf",
+        "Chicken Fried Rice Combo": "68970452d7a394001ac428d8",
+        "Chapati With Chicken Curry": "68970452d7a394001ac428fc",
+        "Chapati Egg Combo": "69020aeeb069010013834d6f"
+      }
+    }
+  }
+}
